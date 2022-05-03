@@ -1,0 +1,15 @@
+module AES(
+input [127:0]in,
+input [(1 * 32 - 1):0] key,
+output [127:0]out
+);
+    //test input 3243f6a8885a308d313198a2e0370734
+    wire [127:0] state [4:0];
+    assign state[0] = in;
+
+    subBytes m0(state[0],state[1]);
+    Shift_Rows m1(state[2],state[1]);//reversed inputs
+    MixColumns m2(state[2],state[3]);
+	 
+assign out = state[3];
+endmodule
