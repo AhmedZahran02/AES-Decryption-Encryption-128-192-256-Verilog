@@ -1,10 +1,11 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/AOZ/Desktop/New folder/AES.v
-source_file = 1, C:/Users/AOZ/Desktop/New folder/subBytes.v
-source_file = 1, C:/Users/AOZ/Desktop/New folder/sbox.v
-source_file = 1, C:/Users/AOZ/Desktop/New folder/Shift_Rows.v
-source_file = 1, C:/Users/AOZ/Desktop/New folder/MixColumns.v
-source_file = 1, C:/Users/AOZ/Desktop/New folder/db/AES.cbx.xml
+source_file = 1, C:/Users/AOZ/Desktop/Logic-Project/AES.v
+source_file = 1, C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+source_file = 1, C:/Users/AOZ/Desktop/Logic-Project/sbox.v
+source_file = 1, C:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v
+source_file = 1, C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v
+source_file = 1, C:/Users/AOZ/Desktop/Logic-Project/rotword.v
+source_file = 1, C:/Users/AOZ/Desktop/Logic-Project/db/AES.cbx.xml
 design_name = AES
 instance = comp, \out[0]~output , out[0]~output, AES, 1
 instance = comp, \out[1]~output , out[1]~output, AES, 1
