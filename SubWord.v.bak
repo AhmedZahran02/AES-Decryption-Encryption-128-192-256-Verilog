@@ -1,0 +1,16 @@
+module SubWord(data,sb);
+
+input [63:0] data;
+output [63:0] sb;
+
+     sbox q0( .a(data[63:56]),.c(sb[63:56]) );
+     sbox q1( .a(data[55:48]),.c(sb[55:48]) );
+     sbox q2(.a(data[47:40]),.c(sb[47:40]) );
+     sbox q3(.a(data[39:32]),.c(sb[39:32]) );
+     
+     sbox q4(.a(data[31:24]),.c(sb[31:24]) );
+     sbox q5(.a(data[23:16]),.c(sb[23:16]) );
+     sbox q6(.a(data[15:8]),.c(sb[15:8]) );
+     sbox q7(.a(data[7:0]),.c(sb[7:0]) );
+	  
+endmodule
