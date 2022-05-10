@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AES
-Fri May 06 15:33:46 2022
+Tue May 10 17:03:07 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,14 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "MixColumns:m2"
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -33,22 +40,27 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Fri May 06 15:33:46 2022           ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; AES                                         ;
-; Top-level Entity Name       ; AES                                         ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue May 10 17:03:07 2022       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; AES                                         ;
+; Top-level Entity Name           ; AES                                         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 256                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -154,13 +166,112 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+; AES.v                            ; yes             ; User Verilog HDL File  ; C:/Users/AOZ/Desktop/Logic-Project/AES.v            ;         ;
+; subBytes.v                       ; yes             ; User Verilog HDL File  ; C:/Users/AOZ/Desktop/Logic-Project/subBytes.v       ;         ;
+; sbox.v                           ; yes             ; User Verilog HDL File  ; C:/Users/AOZ/Desktop/Logic-Project/sbox.v           ;         ;
+; Shift_Rows.v                     ; yes             ; User Verilog HDL File  ; C:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v     ;         ;
+; MixColumns.v                     ; yes             ; User Verilog HDL File  ; C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v     ;         ;
+; inv_Shift_Rows.v                 ; yes             ; User Verilog HDL File  ; C:/Users/AOZ/Desktop/Logic-Project/inv_Shift_Rows.v ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimate of Logic utilization (ALMs needed) ; 0     ;
+;                                             ;       ;
+; Combinational ALUT usage for logic          ; 0     ;
+;     -- 7 input functions                    ; 0     ;
+;     -- 6 input functions                    ; 0     ;
+;     -- 5 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- <=3 input functions                  ; 0     ;
+;                                             ;       ;
+; Dedicated logic registers                   ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 256   ;
+;                                             ;       ;
+; Total DSP Blocks                            ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; in[0] ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 256   ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |AES                       ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 256  ; 0            ; |AES                ; AES         ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MixColumns:m2"                                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+; boundary_port         ; 256                         ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri May 06 15:33:36 2022
+    Info: Processing started: Tue May 10 17:02:56 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AES -c AES
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -188,13 +299,323 @@ Info (12021): Found 1 design units, including 1 entities, in source file addroun
     Info (12023): Found entity 1: AddRoundKey File: C:/Users/AOZ/Desktop/Logic-Project/AddRoundKey.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file keyexpansion.v
     Info (12023): Found entity 1: KeyExpansion File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file inv_shift_rows.v
+    Info (12023): Found entity 1: inv_Shift_Rows File: C:/Users/AOZ/Desktop/Logic-Project/inv_Shift_Rows.v Line: 1
 Info (12127): Elaborating entity "AES" for the top level hierarchy
-Error (10663): Verilog HDL Port Connection error at AES.v(17): output or inout port "out" must be connected to a structural net expression File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 17
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 4770 megabytes
-    Error: Processing ended: Fri May 06 15:33:46 2022
-    Error: Elapsed time: 00:00:10
-    Error: Total CPU time (on all processors): 00:00:21
+Warning (10858): Verilog HDL warning at AES.v(6): object bout used but never assigned File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
+Warning (10030): Net "bout" at AES.v(6) has no driver or initial value, using a default initial value '0' File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
+Info (12128): Elaborating entity "subBytes" for hierarchy "subBytes:m0" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 13
+Info (12128): Elaborating entity "sbox" for hierarchy "subBytes:m0|sbox:q0" File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v Line: 6
+Info (12128): Elaborating entity "Shift_Rows" for hierarchy "Shift_Rows:m1" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 14
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "ar2din" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "ar2dout" into its bus
+Info (12128): Elaborating entity "inv_Shift_Rows" for hierarchy "inv_Shift_Rows:mt" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 15
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "ar2din" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "ar2dout" into its bus
+Info (12128): Elaborating entity "MixColumns" for hierarchy "MixColumns:m2" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 16
+Warning (10240): Verilog HDL Always Construct warning at MixColumns.v(20): inferring latch(es) for variable "catch", which holds its previous value in one or more paths through the always construct File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 20
+Info (10041): Inferred latch for "hhh[3][0]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[3][1]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[3][2]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[3][3]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[3][4]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[3][5]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[3][6]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[3][7]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[2][0]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[2][1]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[2][2]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[2][3]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[2][4]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[2][5]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[2][6]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[2][7]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[1][0]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[1][1]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[1][2]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[1][3]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[1][4]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[1][5]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[1][6]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[1][7]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[0][0]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[0][1]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[0][2]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[0][3]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[0][4]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[0][5]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[0][6]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10041): Inferred latch for "hhh[0][7]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "state" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "temp" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "mixer" into its bus
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "out[0]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[1]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[2]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[3]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[4]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[5]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[6]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[7]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[8]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[9]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[10]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[11]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[12]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[13]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[14]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[15]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[16]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[17]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[18]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[19]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[20]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[21]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[22]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[23]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[24]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[25]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[26]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[27]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[28]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[29]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[30]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[31]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[32]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[33]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[34]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[35]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[36]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[37]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[38]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[39]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[40]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[41]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[42]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[43]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[44]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[45]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[46]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[47]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[48]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[49]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[50]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[51]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[52]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[53]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[54]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[55]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[56]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[57]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[58]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[59]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[60]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[61]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[62]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[63]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[64]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[65]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[66]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[67]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[68]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[69]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[70]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[71]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[72]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[73]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[74]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[75]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[76]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[77]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[78]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[79]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[80]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[81]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[82]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[83]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[84]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[85]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[86]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[87]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[88]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[89]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[90]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[91]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[92]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[93]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[94]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[95]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[96]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[97]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[98]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[99]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[100]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[101]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[102]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[103]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[104]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[105]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[106]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[107]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[108]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[109]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[110]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[111]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[112]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[113]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[114]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[115]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[116]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[117]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[118]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[119]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[120]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[121]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[122]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[123]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[124]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[125]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[126]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+    Warning (13410): Pin "out[127]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 128 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "in[0]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[1]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[2]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[3]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[4]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[5]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[6]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[7]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[8]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[9]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[10]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[11]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[12]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[13]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[14]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[15]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[16]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[17]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[18]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[19]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[20]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[21]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[22]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[23]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[24]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[25]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[26]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[27]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[28]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[29]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[30]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[31]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[32]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[33]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[34]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[35]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[36]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[37]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[38]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[39]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[40]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[41]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[42]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[43]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[44]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[45]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[46]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[47]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[48]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[49]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[50]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[51]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[52]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[53]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[54]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[55]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[56]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[57]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[58]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[59]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[60]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[61]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[62]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[63]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[64]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[65]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[66]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[67]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[68]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[69]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[70]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[71]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[72]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[73]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[74]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[75]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[76]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[77]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[78]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[79]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[80]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[81]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[82]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[83]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[84]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[85]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[86]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[87]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[88]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[89]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[90]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[91]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[92]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[93]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[94]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[95]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[96]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[97]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[98]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[99]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[100]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[101]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[102]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[103]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[104]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[105]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[106]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[107]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[108]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[109]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[110]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[111]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[112]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[113]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[114]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[115]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[116]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[117]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[118]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[119]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[120]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[121]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[122]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[123]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[124]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[125]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[126]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+    Warning (15610): No output dependent on input pin "in[127]" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 2
+Info (21057): Implemented 256 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 128 input pins
+    Info (21059): Implemented 128 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 262 warnings
+    Info: Peak virtual memory: 4801 megabytes
+    Info: Processing ended: Tue May 10 17:03:07 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:22
 
 
