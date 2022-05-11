@@ -12,91 +12,77 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/AES.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:04:24 on May 10,2022
+# Start time: 15:41:40 on May 11,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/AES.v 
 # -- Compiling module AES
 # 
 # Top level modules:
 # 	AES
-# End time: 17:04:24 on May 10,2022, Elapsed time: 0:00:00
+# End time: 15:41:40 on May 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/subBytes.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:04:24 on May 10,2022
+# Start time: 15:41:40 on May 11,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/subBytes.v 
 # -- Compiling module subBytes
 # 
 # Top level modules:
 # 	subBytes
-# End time: 17:04:24 on May 10,2022, Elapsed time: 0:00:00
+# End time: 15:41:40 on May 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/sbox.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:04:24 on May 10,2022
+# Start time: 15:41:40 on May 11,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/sbox.v 
 # -- Compiling module sbox
 # 
 # Top level modules:
 # 	sbox
-# End time: 17:04:24 on May 10,2022, Elapsed time: 0:00:00
+# End time: 15:41:41 on May 11,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:04:24 on May 10,2022
+# Start time: 15:41:41 on May 11,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v 
 # -- Compiling module Shift_Rows
 # 
 # Top level modules:
 # 	Shift_Rows
-# End time: 17:04:24 on May 10,2022, Elapsed time: 0:00:00
+# End time: 15:41:41 on May 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:04:24 on May 10,2022
+# Start time: 15:41:41 on May 11,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v 
 # -- Compiling module MixColumns
 # 
 # Top level modules:
 # 	MixColumns
-# End time: 17:04:25 on May 10,2022, Elapsed time: 0:00:01
+# End time: 15:41:41 on May 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/inv_Shift_Rows.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/AddRoundKey.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:04:25 on May 10,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/inv_Shift_Rows.v 
-# -- Compiling module inv_Shift_Rows
+# Start time: 15:41:41 on May 11,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/AddRoundKey.v 
+# -- Compiling module AddRoundKey
 # 
 # Top level modules:
-# 	inv_Shift_Rows
-# End time: 17:04:25 on May 10,2022, Elapsed time: 0:00:00
+# 	AddRoundKey
+# End time: 15:41:41 on May 11,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.Shift_Rows
-# vsim work.Shift_Rows 
-# Start time: 17:04:43 on May 10,2022
+vsim work.AES
+# vsim work.AES 
+# Start time: 15:41:43 on May 11,2022
+# Loading work.AES
+# Loading work.subBytes
+# Loading work.sbox
 # Loading work.Shift_Rows
-add wave -position end  sim:/Shift_Rows/arin
-add wave -position end  sim:/Shift_Rows/arout
-force -freeze sim:/Shift_Rows/arin 000100010010001000110011010001000101010101100110011101111000100010011001101010101011101111001100110111011110111011111111 0
+# Loading work.MixColumns
+# Loading work.AddRoundKey
+add wave -position end  sim:/AES/in
+add wave -position end  sim:/AES/out
+force -freeze sim:/AES/in 128'h193de3bea0f4e22b9ac68d2ae9f84808 0
 run
-run
-run
-run
-run
-vsim work.inv_Shift_Rows
-# End time: 17:06:39 on May 10,2022, Elapsed time: 0:01:56
-# Errors: 0, Warnings: 0
-# vsim work.inv_Shift_Rows 
-# Start time: 17:06:39 on May 10,2022
-# Loading work.inv_Shift_Rows
-add wave -position end  sim:/inv_Shift_Rows/arin
-add wave -position end  sim:/inv_Shift_Rows/arout
-force -freeze sim:/inv_Shift_Rows/arin 00000000010101011010101011111111010001001001100111101110001100111000100011011101001000100111011111001100000100010110011010111011 0
-run
-run
-run
-run
-run
-run
-# End time: 17:11:18 on May 10,2022, Elapsed time: 0:04:39
+# End time: 15:43:27 on May 11,2022, Elapsed time: 0:01:44
 # Errors: 0, Warnings: 0
