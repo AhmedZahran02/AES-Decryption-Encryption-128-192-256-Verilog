@@ -10,9 +10,9 @@ wire [127:0] sb,sr,mcl,ark;
 	 
 	
 KeyExpansion m0(key,i,keyout);
-inv_Shift_Rows m2(sr,in);//reversed inputs
-invsubBytes m1(sr,sb);
-ark=keyout^sb;
+inv_Shift_Rows m1(sr,in);//reversed inputs
+invsubBytes m2(sr,sb);
+assign ark=keyout^sb;
 //inv_MixColumns m3(ark,mcl);
 
 assign out = mcl;

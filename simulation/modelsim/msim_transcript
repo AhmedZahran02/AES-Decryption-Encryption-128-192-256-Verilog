@@ -12,170 +12,410 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/AES.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:27:27 on May 12,2022
+# Start time: 19:19:43 on May 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/AES.v 
 # -- Compiling module AES
 # 
 # Top level modules:
 # 	AES
-# End time: 06:27:27 on May 12,2022, Elapsed time: 0:00:00
+# End time: 19:19:43 on May 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/subBytes.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:27:27 on May 12,2022
+# Start time: 19:19:43 on May 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/subBytes.v 
 # -- Compiling module subBytes
 # 
 # Top level modules:
 # 	subBytes
-# End time: 06:27:27 on May 12,2022, Elapsed time: 0:00:00
+# End time: 19:19:43 on May 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/sbox.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:27:27 on May 12,2022
+# Start time: 19:19:43 on May 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/sbox.v 
 # -- Compiling module sbox
 # 
 # Top level modules:
 # 	sbox
-# End time: 06:27:27 on May 12,2022, Elapsed time: 0:00:00
+# End time: 19:19:43 on May 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:27:27 on May 12,2022
+# Start time: 19:19:43 on May 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v 
 # -- Compiling module Shift_Rows
 # 
 # Top level modules:
 # 	Shift_Rows
-# End time: 06:27:27 on May 12,2022, Elapsed time: 0:00:00
+# End time: 19:19:43 on May 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:27:27 on May 12,2022
+# Start time: 19:19:43 on May 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v 
 # -- Compiling module MixColumns
 # 
 # Top level modules:
 # 	MixColumns
-# End time: 06:27:27 on May 12,2022, Elapsed time: 0:00:00
+# End time: 19:19:43 on May 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/rotword.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:27:27 on May 12,2022
+# Start time: 19:19:43 on May 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/rotword.v 
 # -- Compiling module rotword
 # 
 # Top level modules:
 # 	rotword
-# End time: 06:27:27 on May 12,2022, Elapsed time: 0:00:00
+# End time: 19:19:43 on May 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/Rcon.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:27:27 on May 12,2022
+# Start time: 19:19:43 on May 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/Rcon.v 
 # -- Compiling module Rcon
 # 
 # Top level modules:
 # 	Rcon
-# End time: 06:27:27 on May 12,2022, Elapsed time: 0:00:00
+# End time: 19:19:43 on May 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:27:27 on May 12,2022
+# Start time: 19:19:43 on May 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v 
 # -- Compiling module KeyExpansion
 # 
 # Top level modules:
 # 	KeyExpansion
-# End time: 06:27:27 on May 12,2022, Elapsed time: 0:00:00
+# End time: 19:19:43 on May 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/main.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:27:27 on May 12,2022
+# Start time: 19:19:43 on May 12,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/main.v 
 # -- Compiling module main
 # 
 # Top level modules:
 # 	main
-# End time: 06:27:27 on May 12,2022, Elapsed time: 0:00:00
+# End time: 19:19:43 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/AES2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:19:43 on May 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/AES2.v 
+# -- Compiling module AES2
+# 
+# Top level modules:
+# 	AES2
+# End time: 19:19:43 on May 12,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.AES
-# vsim work.AES 
-# Start time: 06:27:31 on May 12,2022
-# Loading work.AES
-# Loading work.main
+vsim work.AES2
+# vsim work.AES2 
+# Start time: 19:19:45 on May 12,2022
+# Loading work.AES2
 # Loading work.KeyExpansion
 # Loading work.rotword
 # Loading work.subBytes
 # Loading work.sbox
 # Loading work.Rcon
-# Loading work.Shift_Rows
-# Loading work.MixColumns
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(10): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/r1/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/r1/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[2]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[0]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[2]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[0]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[2]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[3]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[0]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[1]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[3]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[1]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[3]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[4]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[1]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[4]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[4]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[5]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[5]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[5]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[6]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[6]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[6]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[7]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[7]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[7]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[8]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[8]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[8]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[9]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[9]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[9]/r2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(23): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/t0 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/t0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
 # ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/t0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
-add wave -position end  sim:/AES/key
-force -freeze sim:/AES/key 128'h2b7e151628aed2a6abf7158809cf4f3c 0
-add wave -position end  sim:/AES/datain
-add wave -position end  sim:/AES/dataout
-force -freeze sim:/AES/datain 00110010010000111111011010101000100010000101101000110000100011010011000100110001100110001010001011100000001101110000011100110100 0
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+add wave -position end  sim:/AES2/key
+add wave -position end  sim:/AES2/keyout
+force -freeze sim:/AES2/key 128'h2b7e151628aed2a6abf7158809cf4f3c 0
 run
-# End time: 06:32:16 on May 12,2022, Elapsed time: 0:04:45
-# Errors: 0, Warnings: 29
+run
+restart -f
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(10): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[0]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[0]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[0]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[1]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[1]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[1]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+vlog -reportprogress 300 -work work C:/Users/AOZ/Desktop/Logic-Project/AES2.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:25:01 on May 12,2022
+# vlog -reportprogress 300 -work work C:/Users/AOZ/Desktop/Logic-Project/AES2.v 
+# -- Compiling module AES2
+# 
+# Top level modules:
+# 	AES2
+# End time: 19:25:01 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/AOZ/Desktop/Logic-Project/AES2.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:25:08 on May 12,2022
+# vlog -reportprogress 300 -work work C:/Users/AOZ/Desktop/Logic-Project/AES2.v 
+# -- Compiling module AES2
+# 
+# Top level modules:
+# 	AES2
+# End time: 19:25:08 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.AES2
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(10): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+force -freeze sim:/AES2/key 128'h2b7e151628aed2a6abf7158809cf4f3c 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+vlog -reportprogress 300 -work work C:/Users/AOZ/Desktop/Logic-Project/AES2.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:26:57 on May 12,2022
+# vlog -reportprogress 300 -work work C:/Users/AOZ/Desktop/Logic-Project/AES2.v 
+# -- Compiling module AES2
+# 
+# Top level modules:
+# 	AES2
+# End time: 19:26:57 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.AES2
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(10): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[10]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[10]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[10]/m1/m0 File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+force -freeze sim:/AES2/key 128'h2b7e151628aed2a6abf7158809cf4f3c 0
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# End time: 19:30:13 on May 12,2022, Elapsed time: 0:10:28
+# Errors: 0, Warnings: 123

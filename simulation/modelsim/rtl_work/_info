@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/AOZ/Desktop/Logic-Project/simulation/modelsim
 vAES
-Z1 !s110 1652329647
+Z1 !s110 1652375983
 !i10b 1
-!s100 D4YkgPhTaad0c7LY:jCT81
-IRF<jiGgY>Zk`Vjm7iZW:n0
+!s100 5X2BneKQSc^4:cFMO2j<03
+IkM4;FNeW8R4^aZhBTY8WN3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1652329514
+w1652375212
 8C:/Users/AOZ/Desktop/Logic-Project/AES.v
 FC:/Users/AOZ/Desktop/Logic-Project/AES.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1652329647.000000
+Z4 !s108 1652375983.000000
 !s107 C:/Users/AOZ/Desktop/Logic-Project/AES.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/AES.v|
 !i113 1
@@ -31,6 +31,28 @@ Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project
 Z7 tCvgOpt 0
 n@a@e@s
+vAES2
+!s110 1652376417
+!i10b 1
+!s100 1cfmYM3?NSjUf:P9J@AbV2
+IIGRJkkikzCVTQcTdc3VgK3
+R2
+R0
+w1652376407
+8C:/Users/AOZ/Desktop/Logic-Project/AES2.v
+FC:/Users/AOZ/Desktop/Logic-Project/AES2.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1652376417.000000
+!s107 C:/Users/AOZ/Desktop/Logic-Project/AES2.v|
+!s90 -reportprogress|300|-work|work|C:/Users/AOZ/Desktop/Logic-Project/AES2.v|
+!i113 1
+o-work work
+R7
+n@a@e@s2
 vKeyExpansion
 R1
 !i10b 1

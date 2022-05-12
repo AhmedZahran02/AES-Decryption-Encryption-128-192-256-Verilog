@@ -1,5 +1,5 @@
 Fitter report for AES
-Thu May 12 06:26:34 2022
+Thu May 12 19:19:14 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -55,7 +55,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Thu May 12 06:26:34 2022       ;
+; Fitter Status                   ; Successful - Thu May 12 19:19:14 2022       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; AES                                         ;
 ; Top-level Entity Name           ; AES                                         ;
@@ -143,7 +143,7 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -2185,7 +2185,7 @@ Info (184021): Fitter periphery placement operations ending: elapsed time is 00:
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:12
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:11
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'AES.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -2214,10 +2214,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:06
 Info (144001): Generated suppressed messages file C:/Users/AOZ/Desktop/Logic-Project/output_files/AES.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 7786 megabytes
-    Info: Processing ended: Thu May 12 06:26:35 2022
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:01:54
+    Info: Peak virtual memory: 7782 megabytes
+    Info: Processing ended: Thu May 12 19:19:15 2022
+    Info: Elapsed time: 00:00:37
+    Info: Total CPU time (on all processors): 00:01:57
 
 
 +----------------------------+

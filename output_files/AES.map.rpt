@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AES
-Thu May 12 06:25:58 2022
+Thu May 12 19:18:37 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,20 +14,32 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "KeyExpansion:t0"
- 10. Port Connectivity Checks: "main:iter_i[9].r2"
- 11. Port Connectivity Checks: "main:iter_i[8].r2"
- 12. Port Connectivity Checks: "main:iter_i[7].r2"
- 13. Port Connectivity Checks: "main:iter_i[6].r2"
- 14. Port Connectivity Checks: "main:iter_i[5].r2"
- 15. Port Connectivity Checks: "main:iter_i[4].r2"
- 16. Port Connectivity Checks: "main:iter_i[3].r2"
- 17. Port Connectivity Checks: "main:iter_i[2].r2"
- 18. Port Connectivity Checks: "main:r1|KeyExpansion:m0|subBytes:m0"
- 19. Port Connectivity Checks: "main:r1"
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |AES
+ 10. Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[9].m1"
+ 11. Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[8].m1"
+ 12. Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[7].m1"
+ 13. Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[6].m1"
+ 14. Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[5].m1"
+ 15. Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[4].m1"
+ 16. Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[3].m1"
+ 17. Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[2].m1"
+ 18. Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[1].m1"
+ 19. Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[0].m1"
+ 20. Port Connectivity Checks: "AES2:comb_131|KeyExpansion:m0"
+ 21. Port Connectivity Checks: "KeyExpansion:t0"
+ 22. Port Connectivity Checks: "main:iter_i[9].r2"
+ 23. Port Connectivity Checks: "main:iter_i[8].r2"
+ 24. Port Connectivity Checks: "main:iter_i[7].r2"
+ 25. Port Connectivity Checks: "main:iter_i[6].r2"
+ 26. Port Connectivity Checks: "main:iter_i[5].r2"
+ 27. Port Connectivity Checks: "main:iter_i[4].r2"
+ 28. Port Connectivity Checks: "main:iter_i[3].r2"
+ 29. Port Connectivity Checks: "main:iter_i[2].r2"
+ 30. Port Connectivity Checks: "main:r1|KeyExpansion:m0|subBytes:m0"
+ 31. Port Connectivity Checks: "main:r1"
+ 32. Post-Synthesis Netlist Statistics for Top Partition
+ 33. Elapsed Time Per Partition
+ 34. Analysis & Synthesis Messages
 
 
 
@@ -53,7 +65,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 12 06:25:58 2022       ;
+; Analysis & Synthesis Status     ; Successful - Thu May 12 19:18:37 2022       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; AES                                         ;
 ; Top-level Entity Name           ; AES                                         ;
@@ -190,6 +202,7 @@ refer to the applicable agreement for further details.
 ; Rcon.v                           ; yes             ; User Verilog HDL File  ; C:/Users/AOZ/Desktop/Logic-Project/Rcon.v         ;         ;
 ; KeyExpansion.v                   ; yes             ; User Verilog HDL File  ; C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v ;         ;
 ; main.v                           ; yes             ; User Verilog HDL File  ; C:/Users/AOZ/Desktop/Logic-Project/main.v         ;         ;
+; AES2.v                           ; yes             ; User Verilog HDL File  ; C:/Users/AOZ/Desktop/Logic-Project/AES2.v         ;         ;
 +----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
 
 
@@ -245,8 +258,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |AES ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; Nk             ; 1010  ; Unsigned Binary                            ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[9].m1"                                                                                                                                              ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                                                            ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[1..0] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; i[3]    ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; i[2]    ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "KeyExpansion:t0"                                                                                                                                                                  ;
+; Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[8].m1"                                                                                                                                          ;
 +------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -256,6 +292,123 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; i[1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
 ; i[0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
 +------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[7].m1"                                                                                                                                             ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[2..1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[3]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; i[0]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[6].m1"                                                                                                                                             ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[2..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[3]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[5].m1"                                                                                                                                             ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[2..0] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; i[3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[4].m1"                                                                                                                                             ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[2..1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; i[3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[3].m1"                                                                                                                                          ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[3] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[2] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; i[1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[0] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[2].m1"                                                                                                                                             ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[1..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[2]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[1].m1"                                                                                                                                             ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[1..0] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; i[3..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "AES2:comb_131|KeyExpansion:iter_i[0].m1"                                                                                                                                             ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[3..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[1]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; i[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "AES2:comb_131|KeyExpansion:m0"                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[3..1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[0]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "KeyExpansion:t0" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; i[3] ; Input ; Info     ; Stuck at VCC      ;
+; i[2] ; Input ; Info     ; Stuck at GND      ;
+; i[1] ; Input ; Info     ; Stuck at VCC      ;
+; i[0] ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -392,7 +545,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -402,7 +555,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 12 06:25:45 2022
+    Info: Processing started: Thu May 12 19:18:24 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AES -c AES
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -434,9 +587,12 @@ Info (12021): Found 1 design units, including 1 entities, in source file inv_shi
     Info (12023): Found entity 1: inv_Shift_Rows File: C:/Users/AOZ/Desktop/Logic-Project/inv_Shift_Rows.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main.v
     Info (12023): Found entity 1: main File: C:/Users/AOZ/Desktop/Logic-Project/main.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file aes2.v
+    Info (12023): Found entity 1: AES2 File: C:/Users/AOZ/Desktop/Logic-Project/AES2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file main2.v
+    Info (12023): Found entity 1: main2 File: C:/Users/AOZ/Desktop/Logic-Project/main2.v Line: 1
+Critical Warning (10846): Verilog HDL Instantiation warning at AES.v(26): instance has no name File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 26
 Info (12127): Elaborating entity "AES" for the top level hierarchy
-Warning (10858): Verilog HDL warning at AES.v(3): object datain used but never assigned File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 3
-Warning (10030): Net "datain" at AES.v(3) has no driver or initial value, using a default initial value '0' File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 3
 Info (12128): Elaborating entity "main" for hierarchy "main:r1" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 13
 Info (12128): Elaborating entity "KeyExpansion" for hierarchy "main:r1|KeyExpansion:m0" File: C:/Users/AOZ/Desktop/Logic-Project/main.v Line: 12
 Info (12128): Elaborating entity "rotword" for hierarchy "main:r1|KeyExpansion:m0|rotword:rt" File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 9
@@ -517,6 +673,8 @@ Info (10041): Inferred latch for "hhh[0][7]" at MixColumns.v(36) File: C:/Users/
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "state" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "temp" into its bus
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "mixer" into its bus
+Info (12128): Elaborating entity "AES2" for hierarchy "AES2:comb_131" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 26
+Warning (10034): Output port "dataout" at AES2.v(1) has no driver File: C:/Users/AOZ/Desktop/Logic-Project/AES2.v Line: 1
 Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
 Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
 Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
@@ -535,135 +693,28 @@ Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is co
 Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
 Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
 Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "r_out[0][127]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][126]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][125]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][124]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][123]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][122]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][121]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][120]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][119]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][118]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][117]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][116]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][115]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][114]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][113]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][112]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][111]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][110]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][109]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][108]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][107]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][106]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][105]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][104]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][103]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][102]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][101]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][100]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][99]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][98]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][97]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][96]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][95]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][94]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][93]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][92]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][91]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][90]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][89]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][88]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][87]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][86]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][85]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][84]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][83]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][82]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][81]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][80]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][79]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][78]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][77]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][76]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][75]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][74]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][73]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][72]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][71]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][70]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][69]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][68]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][67]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][66]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][65]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][64]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][63]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][62]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][61]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][60]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][59]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][58]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][57]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][56]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][55]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][54]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][53]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][52]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][51]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][50]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][49]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][48]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][47]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][46]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][45]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][44]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][43]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][42]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][41]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][40]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][39]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][38]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][37]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][36]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][35]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][34]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][33]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][32]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][31]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][30]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][29]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][28]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][27]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][26]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][25]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][24]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][23]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][22]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][21]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][20]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][19]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][18]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][17]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][16]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][15]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][14]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][13]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][12]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][11]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][10]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][9]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][8]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][7]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][6]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][5]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][4]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][3]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][2]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][1]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
-    Warning (12110): Net "r_out[0][0]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
+Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
+Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
 Info (276014): Found 200 instances of uninferred RAM logic
     Info (276007): RAM logic "subBytes:t1|sbox:q15|Ram0" is uninferred due to asynchronous read logic File: C:/Users/AOZ/Desktop/Logic-Project/sbox.v Line: 10
     Info (276007): RAM logic "subBytes:t1|sbox:q14|Ram0" is uninferred due to asynchronous read logic File: C:/Users/AOZ/Desktop/Logic-Project/sbox.v Line: 10
@@ -1127,7 +1178,7 @@ Warning (14026): LATCH primitive "main:iter_i[3].r2|MixColumns:m3|hhh[3][7]" is 
 Warning (14026): LATCH primitive "main:iter_i[3].r2|MixColumns:m3|hhh[3][6]" is permanently enabled File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
 Warning (14026): LATCH primitive "main:iter_i[2].r2|MixColumns:m3|hhh[3][7]" is permanently enabled File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
 Warning (14026): LATCH primitive "main:iter_i[2].r2|MixColumns:m3|hhh[3][6]" is permanently enabled File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Warning (12241): 10 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 20 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "dataout[0]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[1]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
@@ -1262,9 +1313,9 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Info (21057): Implemented 128 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 0 input pins
     Info (21059): Implemented 128 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 545 warnings
-    Info: Peak virtual memory: 4832 megabytes
-    Info: Processing ended: Thu May 12 06:25:58 2022
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 438 warnings
+    Info: Peak virtual memory: 4845 megabytes
+    Info: Processing ended: Thu May 12 19:18:37 2022
     Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:26
 
