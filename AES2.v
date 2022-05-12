@@ -2,7 +2,7 @@ module AES2(output [127:0] dataout);
 
 	wire [127:0] datain;
 	wire [127:0] key;
-	
+	reg [127:0] state;
 	wire [127:0] r_out[0:9];
 	
 	wire [127:0] keyout[1:10];
@@ -15,7 +15,8 @@ module AES2(output [127:0] dataout);
 	KeyExpansion m1(keyout[i-1],i,keyout[i]);
 	end
 	endgenerate
-	
+	state=datain;
+	state=datain^keyout[10];
 	
 	  
 endmodule
