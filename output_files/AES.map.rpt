@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AES
-Thu May 12 05:24:17 2022
+Thu May 12 06:25:58 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -53,7 +53,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 12 05:24:17 2022       ;
+; Analysis & Synthesis Status     ; Successful - Thu May 12 06:25:58 2022       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; AES                                         ;
 ; Top-level Entity Name           ; AES                                         ;
@@ -258,93 +258,98 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "main:iter_i[9].r2"                                                                     ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; i[3..2] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; i[1]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; i[0]    ; Input  ; Info     ; Stuck at GND                                                                        ;
-; keyout  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main:iter_i[9].r2"                                                                                                                                                                   ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[2..1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[3]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; i[0]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------+
-; Port Connectivity Checks: "main:iter_i[8].r2" ;
-+---------+-------+----------+------------------+
-; Port    ; Type  ; Severity ; Details          ;
-+---------+-------+----------+------------------+
-; i[3..2] ; Input ; Info     ; Stuck at GND     ;
-; i[1]    ; Input ; Info     ; Stuck at VCC     ;
-; i[0]    ; Input ; Info     ; Stuck at GND     ;
-+---------+-------+----------+------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main:iter_i[8].r2"                                                                                                                                                                   ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[2..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[3]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------+
-; Port Connectivity Checks: "main:iter_i[7].r2" ;
-+---------+-------+----------+------------------+
-; Port    ; Type  ; Severity ; Details          ;
-+---------+-------+----------+------------------+
-; i[3..2] ; Input ; Info     ; Stuck at GND     ;
-; i[1]    ; Input ; Info     ; Stuck at VCC     ;
-; i[0]    ; Input ; Info     ; Stuck at GND     ;
-+---------+-------+----------+------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main:iter_i[7].r2"                                                                                                                                                                   ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[2..0] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; i[3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------+
-; Port Connectivity Checks: "main:iter_i[6].r2" ;
-+---------+-------+----------+------------------+
-; Port    ; Type  ; Severity ; Details          ;
-+---------+-------+----------+------------------+
-; i[3..2] ; Input ; Info     ; Stuck at GND     ;
-; i[1]    ; Input ; Info     ; Stuck at VCC     ;
-; i[0]    ; Input ; Info     ; Stuck at GND     ;
-+---------+-------+----------+------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main:iter_i[6].r2"                                                                                                                                                                   ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[2..1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; i[3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------+
-; Port Connectivity Checks: "main:iter_i[5].r2" ;
-+---------+-------+----------+------------------+
-; Port    ; Type  ; Severity ; Details          ;
-+---------+-------+----------+------------------+
-; i[3..2] ; Input ; Info     ; Stuck at GND     ;
-; i[1]    ; Input ; Info     ; Stuck at VCC     ;
-; i[0]    ; Input ; Info     ; Stuck at GND     ;
-+---------+-------+----------+------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main:iter_i[5].r2"                                                                                                                                                                ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[3] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[2] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; i[1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[0] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------+
-; Port Connectivity Checks: "main:iter_i[4].r2" ;
-+---------+-------+----------+------------------+
-; Port    ; Type  ; Severity ; Details          ;
-+---------+-------+----------+------------------+
-; i[3..2] ; Input ; Info     ; Stuck at GND     ;
-; i[1]    ; Input ; Info     ; Stuck at VCC     ;
-; i[0]    ; Input ; Info     ; Stuck at GND     ;
-+---------+-------+----------+------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main:iter_i[4].r2"                                                                                                                                                                   ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[1..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[3]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[2]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------+
-; Port Connectivity Checks: "main:iter_i[3].r2" ;
-+---------+-------+----------+------------------+
-; Port    ; Type  ; Severity ; Details          ;
-+---------+-------+----------+------------------+
-; i[3..2] ; Input ; Info     ; Stuck at GND     ;
-; i[1]    ; Input ; Info     ; Stuck at VCC     ;
-; i[0]    ; Input ; Info     ; Stuck at GND     ;
-+---------+-------+----------+------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main:iter_i[3].r2"                                                                                                                                                                   ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[1..0] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; i[3..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------+
-; Port Connectivity Checks: "main:iter_i[2].r2" ;
-+---------+-------+----------+------------------+
-; Port    ; Type  ; Severity ; Details          ;
-+---------+-------+----------+------------------+
-; i[3..2] ; Input ; Info     ; Stuck at GND     ;
-; i[1]    ; Input ; Info     ; Stuck at VCC     ;
-; i[0]    ; Input ; Info     ; Stuck at GND     ;
-+---------+-------+----------+------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "main:iter_i[2].r2"                                                                                                                                                                   ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i[3..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; i[1]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; i[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -387,7 +392,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -397,7 +402,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 12 05:24:04 2022
+    Info: Processing started: Thu May 12 06:25:45 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AES -c AES
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -531,134 +536,6 @@ Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is co
 Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
 Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v Line: 10
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "key[127]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[126]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[125]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[124]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[123]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[122]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[121]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[120]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[119]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[118]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[117]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[116]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[115]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[114]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[113]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[112]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[111]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[110]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[109]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[108]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[107]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[106]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[105]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[104]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[103]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[102]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[101]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[100]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[99]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[98]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[97]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[96]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[95]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[94]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[93]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[92]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[91]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[90]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[89]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[88]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[87]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[86]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[85]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[84]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[83]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[82]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[81]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[80]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[79]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[78]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[77]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[76]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[75]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[74]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[73]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[72]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[71]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[70]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[69]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[68]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[67]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[66]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[65]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[64]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[63]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[62]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[61]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[60]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[59]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[58]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[57]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[56]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[55]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[54]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[53]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[52]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[51]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[50]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[49]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[48]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[47]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[46]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[45]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[44]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[43]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[42]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[41]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[40]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[39]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[38]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[37]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[36]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[35]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[34]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[33]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[32]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[31]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[30]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[29]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[28]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[27]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[26]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[25]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[24]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[23]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[22]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[21]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[20]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[19]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[18]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[17]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[16]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[15]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[14]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[13]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[12]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[11]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[10]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[9]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[8]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[7]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[6]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[5]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[4]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[3]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[2]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[1]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
-    Warning (12110): Net "key[0]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 4
     Warning (12110): Net "r_out[0][127]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
     Warning (12110): Net "r_out[0][126]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
     Warning (12110): Net "r_out[0][125]" is missing source, defaulting to GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 6
@@ -1250,145 +1127,145 @@ Warning (14026): LATCH primitive "main:iter_i[3].r2|MixColumns:m3|hhh[3][7]" is 
 Warning (14026): LATCH primitive "main:iter_i[3].r2|MixColumns:m3|hhh[3][6]" is permanently enabled File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
 Warning (14026): LATCH primitive "main:iter_i[2].r2|MixColumns:m3|hhh[3][7]" is permanently enabled File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
 Warning (14026): LATCH primitive "main:iter_i[2].r2|MixColumns:m3|hhh[3][6]" is permanently enabled File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 10 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "dataout[0]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[1]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[0]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[1]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[2]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[3]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[3]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[4]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[5]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[6]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[7]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[6]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[7]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[8]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[9]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[10]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[11]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[9]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[10]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[11]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[12]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[13]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[14]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[15]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[16]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[15]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[16]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[17]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[18]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[19]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[19]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[20]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[21]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[22]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[23]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[22]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[23]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[24]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[25]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[26]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[25]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[26]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[27]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[28]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[29]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[30]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[31]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[29]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[30]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[31]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[32]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[33]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[34]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[33]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[34]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[35]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[36]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[37]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[38]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[39]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[40]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[40]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[41]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[42]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[42]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[43]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[44]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[45]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[46]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[47]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[44]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[45]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[46]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[47]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[48]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[49]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[50]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[49]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[50]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[51]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[52]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[53]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[54]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[53]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[54]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[55]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[56]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[57]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[58]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[59]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[60]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[61]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[60]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[61]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[62]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[63]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[64]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[63]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[64]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[65]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[66]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[67]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[68]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[67]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[68]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[69]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[70]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[71]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[72]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[73]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[74]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[73]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[74]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[75]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[76]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[77]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[78]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[79]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[80]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[79]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[80]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[81]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[82]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[83]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[83]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[84]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[85]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[85]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[86]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[87]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[87]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[88]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[89]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[90]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[91]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[90]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[91]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[92]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[93]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[94]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[94]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[95]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[96]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[96]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[97]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[98]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[99]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[100]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[101]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[102]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[101]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[102]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[103]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[104]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[104]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[105]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[106]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[107]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[108]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[109]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[110]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[107]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[108]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[109]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[110]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[111]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[112]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[113]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[114]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[115]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[114]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[115]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[116]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[117]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[117]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[118]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[119]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[120]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[121]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[122]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[122]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[123]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[124]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[125]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
-    Warning (13410): Pin "dataout[126]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[124]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[125]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Warning (13410): Pin "dataout[126]" is stuck at VCC File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
     Warning (13410): Pin "dataout[127]" is stuck at GND File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 128 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 0 input pins
     Info (21059): Implemented 128 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 673 warnings
-    Info: Peak virtual memory: 4834 megabytes
-    Info: Processing ended: Thu May 12 05:24:17 2022
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 545 warnings
+    Info: Peak virtual memory: 4832 megabytes
+    Info: Processing ended: Thu May 12 06:25:58 2022
     Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Total CPU time (on all processors): 00:00:26
 
 
