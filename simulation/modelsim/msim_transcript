@@ -12,179 +12,232 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/AES.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:57 on May 14,2022
+# Start time: 21:01:27 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/AES.v 
 # -- Compiling module AES
 # 
 # Top level modules:
 # 	AES
-# End time: 11:14:57 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:57 on May 14,2022
+# Start time: 21:01:28 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v 
 # -- Compiling module subBytes
 # 
 # Top level modules:
 # 	subBytes
-# End time: 11:14:57 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/sbox.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:57 on May 14,2022
+# Start time: 21:01:28 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/sbox.v 
 # -- Compiling module sbox
 # 
 # Top level modules:
 # 	sbox
-# End time: 11:14:57 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/Shift_Rows.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:57 on May 14,2022
+# Start time: 21:01:28 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/Shift_Rows.v 
 # -- Compiling module Shift_Rows
 # 
 # Top level modules:
 # 	Shift_Rows
-# End time: 11:14:57 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/MixColumns.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:57 on May 14,2022
+# Start time: 21:01:28 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/MixColumns.v 
 # -- Compiling module MixColumns
 # 
 # Top level modules:
 # 	MixColumns
-# End time: 11:14:57 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/rotword.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:57 on May 14,2022
+# Start time: 21:01:28 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/rotword.v 
 # -- Compiling module rotword
 # 
 # Top level modules:
 # 	rotword
-# End time: 11:14:57 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/invsbox.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:57 on May 14,2022
+# Start time: 21:01:28 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/invsbox.v 
 # -- Compiling module invsbox
 # 
 # Top level modules:
 # 	invsbox
-# End time: 11:14:57 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/invsubBytes.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:57 on May 14,2022
+# Start time: 21:01:28 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/invsubBytes.v 
 # -- Compiling module invsubBytes
 # 
 # Top level modules:
 # 	invsubBytes
-# End time: 11:14:57 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/Rcon.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:57 on May 14,2022
+# Start time: 21:01:28 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/Rcon.v 
 # -- Compiling module Rcon
 # 
 # Top level modules:
 # 	Rcon
-# End time: 11:14:57 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:57 on May 14,2022
+# Start time: 21:01:28 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v 
 # -- Compiling module KeyExpansion
 # 
 # Top level modules:
 # 	KeyExpansion
-# End time: 11:14:57 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_Shift_Rows.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:57 on May 14,2022
+# Start time: 21:01:28 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_Shift_Rows.v 
 # -- Compiling module inv_Shift_Rows
 # 
 # Top level modules:
 # 	inv_Shift_Rows
-# End time: 11:14:57 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/main.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:58 on May 14,2022
+# Start time: 21:01:28 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/main.v 
 # -- Compiling module main
 # 
 # Top level modules:
 # 	main
-# End time: 11:14:58 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:58 on May 14,2022
+# Start time: 21:01:28 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v 
 # -- Compiling module AES2
 # 
 # Top level modules:
 # 	AES2
-# End time: 11:14:58 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/main2.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:58 on May 14,2022
+# Start time: 21:01:28 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/main2.v 
 # -- Compiling module main2
 # 
 # Top level modules:
 # 	main2
-# End time: 11:14:58 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:14:58 on May 14,2022
+# Start time: 21:01:28 on May 14,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project" C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v 
 # -- Compiling module inv_MixColumns
 # 
 # Top level modules:
 # 	inv_MixColumns
-# End time: 11:14:58 on May 14,2022, Elapsed time: 0:00:00
+# End time: 21:01:28 on May 14,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.inv_MixColumns
-# vsim work.inv_MixColumns 
-# Start time: 11:15:03 on May 14,2022
+vsim work.AES2
+# vsim work.AES2 
+# Start time: 21:01:33 on May 14,2022
+# Loading work.AES2
+# Loading work.KeyExpansion
+# Loading work.rotword
+# Loading work.subBytes
+# Loading work.sbox
+# Loading work.Rcon
+# Loading work.main2
+# Loading work.inv_Shift_Rows
+# Loading work.invsubBytes
+# Loading work.invsbox
 # Loading work.inv_MixColumns
-add wave -position insertpoint sim:/inv_MixColumns/*
-force -freeze sim:/inv_MixColumns/in 128'hbd6e7c3df2b5779e0b61216e8b10b689 0
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v(11): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/m0/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[2]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[3]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[4]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[5]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[6]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[7]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[8]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[9]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[10]/m1 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'data'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[10]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+# ** Warning: (vsim-3015) C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v(10): [PCDPC] - Port size (128) does not match connection size (32) for port 'sb'. The port definition is at: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /AES2/iter_i[10]/m1/m0 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+add wave -position insertpoint sim:/AES2/*
+force -freeze sim:/AES2/datain 128'h69c4e0d86a7b0430d8cdb78070b4c55a 0
+force -freeze sim:/AES2/key 128'h000102030405060708090a0b0c0d0e0f 0
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# End time: 11:19:20 on May 14,2022, Elapsed time: 0:04:17
-# Errors: 0, Warnings: 0
+# End time: 21:03:58 on May 14,2022, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 30
