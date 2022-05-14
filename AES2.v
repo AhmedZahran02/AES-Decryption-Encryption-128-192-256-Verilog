@@ -15,8 +15,10 @@ module AES2(output [127:0] dataout);
 	KeyExpansion m1(keyout[i-1],i,keyout[i]);
 	end
 	endgenerate
-	state=datain;
-	state=datain^keyout[10];
 	
+	always @(*)
+	begin
+	state=datain^keyout[10];
+	end
 	  
 endmodule
