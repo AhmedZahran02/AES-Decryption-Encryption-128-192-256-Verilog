@@ -7,93 +7,207 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/AOZ/Desktop/Logic-Project/simulation/modelsim
+Z0 dC:/Users/ASUS/Documents/GitHub/Logic-Project/simulation/modelsim
 vAES
-Z1 !s110 1652375983
+Z1 !s110 1652519697
 !i10b 1
-!s100 5X2BneKQSc^4:cFMO2j<03
-IkM4;FNeW8R4^aZhBTY8WN3
+!s100 E322PiH5ZXddmYcH]E:_e3
+I1@G8jNX[N53@d;V4XZzA>3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1652375212
-8C:/Users/AOZ/Desktop/Logic-Project/AES.v
-FC:/Users/AOZ/Desktop/Logic-Project/AES.v
+w1652379567
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/AES.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/AES.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1652375983.000000
-!s107 C:/Users/AOZ/Desktop/Logic-Project/AES.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/AES.v|
+Z4 !s108 1652519697.000000
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/AES.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/AES.v|
 !i113 1
 Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project
 Z7 tCvgOpt 0
 n@a@e@s
 vAES2
-!s110 1652376417
+Z8 !s110 1652519698
 !i10b 1
-!s100 1cfmYM3?NSjUf:P9J@AbV2
-IIGRJkkikzCVTQcTdc3VgK3
+!s100 Hb;C<lPGEB03i:1FMnj>?2
+Id>lCVC10<XB7U^K:kJHA[3
 R2
 R0
-w1652376407
-8C:/Users/AOZ/Desktop/Logic-Project/AES2.v
-FC:/Users/AOZ/Desktop/Logic-Project/AES2.v
+w1652385973
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v
 L0 1
 R3
 r1
 !s85 0
 31
-!s108 1652376417.000000
-!s107 C:/Users/AOZ/Desktop/Logic-Project/AES2.v|
-!s90 -reportprogress|300|-work|work|C:/Users/AOZ/Desktop/Logic-Project/AES2.v|
+Z9 !s108 1652519698.000000
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v|
 !i113 1
-o-work work
+R5
+R6
 R7
 n@a@e@s2
-vKeyExpansion
-R1
+vinv_MixColumns
+R8
 !i10b 1
-!s100 =]di@QL[>7fVMVnil8?O[0
-I`aD7OEMLje;jNecS@Vj[i3
+!s100 A:fe80gUh30:8LO0lcVmz0
+I4Q;OkI2QGjmziiJZ?JIjN1
 R2
 R0
-w1652325668
-8C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
-FC:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
+w1652519610
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v|
+!i113 1
+R5
+R6
+R7
+ninv_@mix@columns
+vinv_Shift_Rows
+R1
+!i10b 1
+!s100 :lE5h@87ah0[a9??3=eA]3
+Ijhh<lDX:6[oh`EaGbX?_d0
+R2
+R0
+Z10 w1652379133
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_Shift_Rows.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/inv_Shift_Rows.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v|
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_Shift_Rows.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_Shift_Rows.v|
+!i113 1
+R5
+R6
+R7
+ninv_@shift_@rows
+vinvsbox
+R1
+!i10b 1
+!s100 _0fLe0i3LUV2eNQAScX?U2
+IFOS3Y`HXbjTO=g9o9V4h62
+R2
+R0
+R10
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/invsbox.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/invsbox.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/invsbox.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/invsbox.v|
+!i113 1
+R5
+R6
+R7
+vinvsubBytes
+R1
+!i10b 1
+!s100 YTi;>;Nh?a9Q37@cHj_AW3
+ID3X=dCf^LHf1zf@>CZiLE3
+R2
+R0
+R10
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/invsubBytes.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/invsubBytes.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/invsubBytes.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/invsubBytes.v|
+!i113 1
+R5
+R6
+R7
+ninvsub@bytes
+vKeyExpansion
+R1
+!i10b 1
+!s100 =]di@QL[>7fVMVnil8?O[0
+IK6PbAkV?RX8;dA]UAg_Sm3
+R2
+R0
+R10
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v|
 !i113 1
 R5
 R6
 R7
 n@key@expansion
 vmain
-R1
+R8
 !i10b 1
 !s100 Y=Ed;0E?WjIANkajE9`AE3
-ILL`e@fP4RNhk12DQ>5Q`D3
+IP=o6eR:T@:[?Cdz>4EW9>2
 R2
 R0
-w1652328064
-8C:/Users/AOZ/Desktop/Logic-Project/main.v
-FC:/Users/AOZ/Desktop/Logic-Project/main.v
+R10
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/main.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/main.v
 L0 1
 R3
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/AOZ/Desktop/Logic-Project/main.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/main.v|
+R9
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/main.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/main.v|
+!i113 1
+R5
+R6
+R7
+vmain2
+R8
+!i10b 1
+!s100 <_OlmKJEXYzHmbS@::@1_1
+Ie[`7AIec14:mIhW?<D8dT0
+R2
+R0
+w1652515363
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/main2.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/main2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/main2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/main2.v|
 !i113 1
 R5
 R6
@@ -102,20 +216,20 @@ vMixColumns
 R1
 !i10b 1
 !s100 IXdYPEO[Q0c?fD]kPcJ7<2
-IFHPQcic=A=?=n_9<T?1o41
+IJCT5lg8>^1znZG0P=TVeE1
 R2
 R0
-w1651837638
-8C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v
-FC:/Users/AOZ/Desktop/Logic-Project/MixColumns.v
+R10
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/MixColumns.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/MixColumns.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v|
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/MixColumns.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/MixColumns.v|
 !i113 1
 R5
 R6
@@ -125,20 +239,20 @@ vRcon
 R1
 !i10b 1
 !s100 UJkCiD?Ek?zGcSb50WjXl2
-I?4`HLzag0=ODCiFeTfI>V3
+IZE5O57@?2fj_C0HU5E3ek0
 R2
 R0
-w1651837533
-8C:/Users/AOZ/Desktop/Logic-Project/Rcon.v
-FC:/Users/AOZ/Desktop/Logic-Project/Rcon.v
+R10
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/Rcon.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/Rcon.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/AOZ/Desktop/Logic-Project/Rcon.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/Rcon.v|
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/Rcon.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/Rcon.v|
 !i113 1
 R5
 R6
@@ -148,20 +262,20 @@ vrotword
 R1
 !i10b 1
 !s100 U<gK@OPdO@Q@C492i`jl13
-Id7O^9c6:>U@@iCR?Ob^]f3
+I;WFJ?DUn^2g>z:<4UD7520
 R2
 R0
-w1651835970
-8C:/Users/AOZ/Desktop/Logic-Project/rotword.v
-FC:/Users/AOZ/Desktop/Logic-Project/rotword.v
+Z11 w1652379134
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/rotword.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/rotword.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/AOZ/Desktop/Logic-Project/rotword.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/rotword.v|
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/rotword.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/rotword.v|
 !i113 1
 R5
 R6
@@ -170,20 +284,20 @@ vsbox
 R1
 !i10b 1
 !s100 V9_@Ie17SgRZTj]7Rkgh@0
-Igiz5DO^doiTSSFD;f9RGa1
+IM]6BKA?I86G?c3AgOAc8`3
 R2
 R0
-w1651587929
-8C:/Users/AOZ/Desktop/Logic-Project/sbox.v
-FC:/Users/AOZ/Desktop/Logic-Project/sbox.v
+R11
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/sbox.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/sbox.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/AOZ/Desktop/Logic-Project/sbox.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/sbox.v|
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/sbox.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/sbox.v|
 !i113 1
 R5
 R6
@@ -192,20 +306,20 @@ vShift_Rows
 R1
 !i10b 1
 !s100 T>Xb9dgacjSVZY`:Xco??1
-ILzO][dL:LdXF4R@EBQCJQ1
+IT8YKUTb5<Cogd350dW:ef3
 R2
 R0
-w1651587962
-8C:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v
-FC:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v
+R10
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/Shift_Rows.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/Shift_Rows.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v|
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/Shift_Rows.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/Shift_Rows.v|
 !i113 1
 R5
 R6
@@ -215,20 +329,20 @@ vsubBytes
 R1
 !i10b 1
 !s100 J09BUR:b4TeUNBDn9;CzV3
-IIl@QfASeI^6X6AW8:DOn[0
+I4IKB>`_7]Z;Q9X8UgLKRW0
 R2
 R0
-w1651587981
-8C:/Users/AOZ/Desktop/Logic-Project/subBytes.v
-FC:/Users/AOZ/Desktop/Logic-Project/subBytes.v
+R11
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/AOZ/Desktop/Logic-Project/subBytes.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/subBytes.v|
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/subBytes.v|
 !i113 1
 R5
 R6

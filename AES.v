@@ -23,7 +23,7 @@ module AES(output [127:0] dataout);
 	KeyExpansion t0(keyout[Nk-1],Nk,keyout[Nk]);
 	subBytes t1(r_out[Nk-1],sb);
 	Shift_Rows t2(sr,sb);//reversed inputs
-	AES2(datain);
+	AES2 ae(datain);
 	assign dataout= keyout[Nk]^sr;
       
 endmodule
