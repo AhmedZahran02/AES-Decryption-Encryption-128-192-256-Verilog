@@ -7,7 +7,7 @@ wire [31:0]sb;
 wire [31:0]rc;
 wire [31:0]rw;
 rotword rt(key[31:0],rw); 
-subBytes m0(rw,sb);
+SubWord m0(rw,sb);
 Rcon m1(i,rc);
 
 assign out[127:96]=sb^rc^key[127:96];
