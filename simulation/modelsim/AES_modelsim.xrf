@@ -15,6 +15,7 @@ source_file = 1, C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_Shift_Rows.v
 source_file = 1, C:/Users/ASUS/Documents/GitHub/Logic-Project/main.v
 source_file = 1, C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v
 source_file = 1, C:/Users/ASUS/Documents/GitHub/Logic-Project/main2.v
+source_file = 1, C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v
 source_file = 1, C:/Users/ASUS/Documents/GitHub/Logic-Project/db/AES.cbx.xml
 design_name = AES
 instance = comp, \dataout[0]~output , dataout[0]~output, AES, 1

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AES
-Thu May 12 22:06:29 2022
+Sat May 14 11:13:47 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -15,31 +15,32 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Parameter Settings for User Entity Instance: Top-level Entity: |AES
- 10. Port Connectivity Checks: "AES2:ae|main2:m2"
- 11. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[10].m1"
- 12. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[9].m1"
- 13. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[8].m1"
- 14. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[7].m1"
- 15. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[6].m1"
- 16. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[5].m1"
- 17. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[4].m1"
- 18. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[3].m1"
- 19. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[2].m1"
- 20. Port Connectivity Checks: "AES2:ae|KeyExpansion:m0"
- 21. Port Connectivity Checks: "KeyExpansion:t0"
- 22. Port Connectivity Checks: "main:iter_i[9].r2"
- 23. Port Connectivity Checks: "main:iter_i[8].r2"
- 24. Port Connectivity Checks: "main:iter_i[7].r2"
- 25. Port Connectivity Checks: "main:iter_i[6].r2"
- 26. Port Connectivity Checks: "main:iter_i[5].r2"
- 27. Port Connectivity Checks: "main:iter_i[4].r2"
- 28. Port Connectivity Checks: "main:iter_i[3].r2"
- 29. Port Connectivity Checks: "main:iter_i[2].r2"
- 30. Port Connectivity Checks: "main:r1|KeyExpansion:m0|subBytes:m0"
- 31. Port Connectivity Checks: "main:r1"
- 32. Post-Synthesis Netlist Statistics for Top Partition
- 33. Elapsed Time Per Partition
- 34. Analysis & Synthesis Messages
+ 10. Port Connectivity Checks: "AES2:ae|main2:m2|inv_MixColumns:m3"
+ 11. Port Connectivity Checks: "AES2:ae|main2:m2"
+ 12. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[10].m1"
+ 13. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[9].m1"
+ 14. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[8].m1"
+ 15. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[7].m1"
+ 16. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[6].m1"
+ 17. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[5].m1"
+ 18. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[4].m1"
+ 19. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[3].m1"
+ 20. Port Connectivity Checks: "AES2:ae|KeyExpansion:iter_i[2].m1"
+ 21. Port Connectivity Checks: "AES2:ae|KeyExpansion:m0"
+ 22. Port Connectivity Checks: "KeyExpansion:t0"
+ 23. Port Connectivity Checks: "main:iter_i[9].r2"
+ 24. Port Connectivity Checks: "main:iter_i[8].r2"
+ 25. Port Connectivity Checks: "main:iter_i[7].r2"
+ 26. Port Connectivity Checks: "main:iter_i[6].r2"
+ 27. Port Connectivity Checks: "main:iter_i[5].r2"
+ 28. Port Connectivity Checks: "main:iter_i[4].r2"
+ 29. Port Connectivity Checks: "main:iter_i[3].r2"
+ 30. Port Connectivity Checks: "main:iter_i[2].r2"
+ 31. Port Connectivity Checks: "main:r1|KeyExpansion:m0|subBytes:m0"
+ 32. Port Connectivity Checks: "main:r1"
+ 33. Post-Synthesis Netlist Statistics for Top Partition
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
 
 
 
@@ -65,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 12 22:06:29 2022       ;
+; Analysis & Synthesis Status     ; Successful - Sat May 14 11:13:47 2022       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; AES                                         ;
 ; Top-level Entity Name           ; AES                                         ;
@@ -207,6 +208,7 @@ refer to the applicable agreement for further details.
 ; main.v                           ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Documents/GitHub/Logic-Project/main.v           ;         ;
 ; AES2.v                           ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v           ;         ;
 ; main2.v                          ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Documents/GitHub/Logic-Project/main2.v          ;         ;
+; inv_MixColumns.v                 ; yes             ; User Verilog HDL File  ; C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v ;         ;
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
 
 
@@ -270,6 +272,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Nk             ; 1010  ; Unsigned Binary                            ;
 +----------------+-------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "AES2:ae|main2:m2|inv_MixColumns:m3"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------+
@@ -555,7 +566,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 12 22:06:15 2022
+    Info: Processing started: Sat May 14 11:13:31 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AES -c AES
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -591,6 +602,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file aes2.v
     Info (12023): Found entity 1: AES2 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main2.v
     Info (12023): Found entity 1: main2 File: C:/Users/ASUS/Documents/GitHub/Logic-Project/main2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file inv_mixcolumns.v
+    Info (12023): Found entity 1: inv_MixColumns File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 1
 Info (12127): Elaborating entity "AES" for the top level hierarchy
 Info (12128): Elaborating entity "main" for hierarchy "main:r1" File: C:/Users/ASUS/Documents/GitHub/Logic-Project/AES.v Line: 13
 Info (12128): Elaborating entity "KeyExpansion" for hierarchy "main:r1|KeyExpansion:m0" File: C:/Users/ASUS/Documents/GitHub/Logic-Project/main.v Line: 12
@@ -681,6 +694,53 @@ Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "ar2dout" into its bus
 Info (12128): Elaborating entity "invsubBytes" for hierarchy "AES2:ae|main2:m2|invsubBytes:m2" File: C:/Users/ASUS/Documents/GitHub/Logic-Project/main2.v Line: 11
 Info (12128): Elaborating entity "invsbox" for hierarchy "AES2:ae|main2:m2|invsubBytes:m2|invsbox:q0" File: C:/Users/ASUS/Documents/GitHub/Logic-Project/invsubBytes.v Line: 6
+Info (12128): Elaborating entity "inv_MixColumns" for hierarchy "AES2:ae|main2:m2|inv_MixColumns:m3" File: C:/Users/ASUS/Documents/GitHub/Logic-Project/main2.v Line: 13
+Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "hhh1", which holds its previous value in one or more paths through the always construct File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "catch", which holds its previous value in one or more paths through the always construct File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "l1", which holds its previous value in one or more paths through the always construct File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "hhh2", which holds its previous value in one or more paths through the always construct File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "l2", which holds its previous value in one or more paths through the always construct File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "l5", which holds its previous value in one or more paths through the always construct File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "hhh3", which holds its previous value in one or more paths through the always construct File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "l3", which holds its previous value in one or more paths through the always construct File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "hhh4", which holds its previous value in one or more paths through the always construct File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "l4", which holds its previous value in one or more paths through the always construct File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 24
+Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "l6", which holds its previous value in one or more paths through the always construct File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 24
+Info (10041): Inferred latch for "hhh[3][0]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[3][1]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[3][2]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[3][3]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[3][4]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[3][5]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[3][6]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[3][7]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[2][0]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[2][1]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[2][2]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[2][3]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[2][4]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[2][5]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[2][6]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[2][7]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[1][0]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[1][1]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[1][2]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[1][3]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[1][4]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[1][5]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[1][6]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[1][7]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[0][0]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[0][1]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[0][2]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[0][3]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[0][4]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[0][5]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[0][6]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10041): Inferred latch for "hhh[0][7]" at inv_MixColumns.v(66) File: C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 66
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "state" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "temp" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "mixer" into its bus
 Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v Line: 10
 Warning (12030): Port "ordered port 1" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v Line: 10
 Warning (12010): Port "ordered port 0" on the entity instantiation of "m0" is connected to a signal of width 32. The formal width of the signal in the module is 128.  The extra bits will be driven by GND. File: C:/Users/ASUS/Documents/GitHub/Logic-Project/KeyExpansion.v Line: 10
@@ -1669,10 +1729,10 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Info (21057): Implemented 128 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 0 input pins
     Info (21059): Implemented 128 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 572 warnings
-    Info: Peak virtual memory: 4859 megabytes
-    Info: Processing ended: Thu May 12 22:06:29 2022
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:28
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 583 warnings
+    Info: Peak virtual memory: 4867 megabytes
+    Info: Processing ended: Sat May 14 11:13:47 2022
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:26
 
 

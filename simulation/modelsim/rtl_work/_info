@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/ASUS/Documents/GitHub/Logic-Project/simulation/modelsim
 vAES
-Z1 !s110 1652386068
+Z1 !s110 1652519697
 !i10b 1
 !s100 E322PiH5ZXddmYcH]E:_e3
 I1@G8jNX[N53@d;V4XZzA>3
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1652386068.000000
+Z4 !s108 1652519697.000000
 !s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/AES.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/AES.v|
 !i113 1
@@ -32,7 +32,7 @@ Z6 !s92 -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Pr
 Z7 tCvgOpt 0
 n@a@e@s
 vAES2
-Z8 !s110 1652386069
+Z8 !s110 1652519698
 !i10b 1
 !s100 Hb;C<lPGEB03i:1FMnj>?2
 Id>lCVC10<XB7U^K:kJHA[3
@@ -46,7 +46,7 @@ R3
 r1
 !s85 0
 31
-Z9 !s108 1652386069.000000
+Z9 !s108 1652519698.000000
 !s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v|
 !i113 1
@@ -54,8 +54,31 @@ R5
 R6
 R7
 n@a@e@s2
-vinv_Shift_Rows
+vinv_MixColumns
 R8
+!i10b 1
+!s100 A:fe80gUh30:8LO0lcVmz0
+I4Q;OkI2QGjmziiJZ?JIjN1
+R2
+R0
+w1652519610
+8C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v
+FC:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v|
+!i113 1
+R5
+R6
+R7
+ninv_@mix@columns
+vinv_Shift_Rows
+R1
 !i10b 1
 !s100 :lE5h@87ah0[a9??3=eA]3
 Ijhh<lDX:6[oh`EaGbX?_d0
@@ -69,7 +92,7 @@ R3
 r1
 !s85 0
 31
-R9
+R4
 !s107 C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_Shift_Rows.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project|C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_Shift_Rows.v|
 !i113 1
@@ -123,7 +146,7 @@ R6
 R7
 ninvsub@bytes
 vKeyExpansion
-R8
+R1
 !i10b 1
 !s100 =]di@QL[>7fVMVnil8?O[0
 IK6PbAkV?RX8;dA]UAg_Sm3
@@ -170,11 +193,11 @@ R7
 vmain2
 R8
 !i10b 1
-!s100 SS]Y<;EM3n7`[Bmb5Flm80
-I0K^3FE5IQB;WhPGj[EPHL1
+!s100 <_OlmKJEXYzHmbS@::@1_1
+Ie[`7AIec14:mIhW?<D8dT0
 R2
 R0
-w1652385591
+w1652515363
 8C:/Users/ASUS/Documents/GitHub/Logic-Project/main2.v
 FC:/Users/ASUS/Documents/GitHub/Logic-Project/main2.v
 L0 1

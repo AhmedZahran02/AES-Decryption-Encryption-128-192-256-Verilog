@@ -66,4 +66,5 @@ set_global_assignment -name VERILOG_FILE inv_Shift_Rows.v
 set_global_assignment -name VERILOG_FILE main.v
 set_global_assignment -name VERILOG_FILE AES2.v
 set_global_assignment -name VERILOG_FILE main2.v
+set_global_assignment -name VERILOG_FILE inv_MixColumns.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

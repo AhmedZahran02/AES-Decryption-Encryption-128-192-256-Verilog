@@ -19,4 +19,5 @@ vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Proje
 vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/main.v}
 vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/AES2.v}
 vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/main2.v}
+vlog -vlog01compat -work work +incdir+C:/Users/ASUS/Documents/GitHub/Logic-Project {C:/Users/ASUS/Documents/GitHub/Logic-Project/inv_MixColumns.v}
 
