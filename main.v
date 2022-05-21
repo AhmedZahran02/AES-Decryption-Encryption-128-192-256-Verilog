@@ -1,8 +1,7 @@
 module main(
 input [127:0]in,
 input [127:0]key,
-output [127:0]out,
-input [3:0]i
+output [127:0]out
 );
 
 wire [127:0] sb,sr,mcl;
