@@ -1,4 +1,4 @@
-module Keysof128(
+module Keys_128(
 input [127:0]key,
 output [1407:0]out
 );

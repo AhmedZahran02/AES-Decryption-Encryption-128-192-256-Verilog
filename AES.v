@@ -7,27 +7,30 @@ module AES(output [127:0] dataout);
 		
 		wire [127:0] keyout[1:10];
 		
-		reg [2303:0] bigout;
+		wire [1407:0] bigout;
+		wire [1663:0] bigout2;
+		wire [2815:0] bigout3;
 	
-	keysof128 m12(key,bigout);
-	
-	assign r_out[0] = datain^key;
-	wire [127:0] sb,sr;
-	
-	main r1(.i(4'b0001),.in(r_out[0]),.key(key),.keyout(keyout[1]),.out(r_out[1]));
-	
-	genvar i;
-	generate
-	for(i = 2; i < Nk; i=i+1)
-	begin : iter_i
-	main r2(.i(i),.in(r_out[i-1]),.key(keyout[i-1]),.keyout(keyout[i]),.out(r_out[i]));
-	end
-	endgenerate
-	
-	KeyExpansion192 t0(keyout[Nk-1],Nk,keyout[Nk]);
-	subBytes t1(r_out[Nk-1],sb);
-	Shift_Rows t2(sr,sb);//reversed inputs
-	AES2 ae(datain);
-	assign dataout= keyout[Nk]^sr;
+		keys_128 m(key,bigout);
+		keys_192 mn(key,bigout2);
+		keys_256 mnn(key,bigout3);
+//	assign r_out[0] = datain^key;
+//	wire [127:0] sb,sr;
+//	
+//	main r1(.i(4'b0001),.in(r_out[0]),.key(key),.keyout(keyout[1]),.out(r_out[1]));
+//	
+//	genvar i;
+//	generate
+//	for(i = 2; i < Nk; i=i+1)
+//	begin : iter_i
+//	main r2(.i(i),.in(r_out[i-1]),.key(keyout[i-1]),.keyout(keyout[i]),.out(r_out[i]));
+//	end
+//	endgenerate
+//	
+//	//KeyExpansion192 t0(keyout[Nk-1],Nk,keyout[Nk]);
+//	subBytes t1(r_out[Nk-1],sb);
+//	Shift_Rows t2(sr,sb);//reversed inputs
+//	AES2 ae(datain);
+//	assign dataout= keyout[Nk]^sr;
       
 endmodule

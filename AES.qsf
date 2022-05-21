@@ -47,21 +47,25 @@ set_global_assignment -name BOARD "DE1-SoC Board"
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE Keys_128.v
 set_global_assignment -name VERILOG_FILE AES.v
 set_global_assignment -name VERILOG_FILE subBytes.v
 set_global_assignment -name VERILOG_FILE sbox.v
 set_global_assignment -name VERILOG_FILE Shift_Rows.v
 set_global_assignment -name VERILOG_FILE MixColumns.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VERILOG_FILE rotword.v
 set_global_assignment -name VERILOG_FILE SubWord.v
 set_global_assignment -name VERILOG_FILE invsbox.v
 set_global_assignment -name VERILOG_FILE invsubBytes.v
 set_global_assignment -name VERILOG_FILE Rcon.v
 set_global_assignment -name VERILOG_FILE AddRoundKey.v
-set_global_assignment -name VERILOG_FILE KeyExpansion.v
 set_global_assignment -name VERILOG_FILE inv_Shift_Rows.v
 set_global_assignment -name VERILOG_FILE main.v
 set_global_assignment -name VERILOG_FILE AES2.v
@@ -69,6 +73,7 @@ set_global_assignment -name VERILOG_FILE main2.v
 set_global_assignment -name VERILOG_FILE inv_MixColumns.v
 set_global_assignment -name VERILOG_FILE KeyExpansion128.v
 set_global_assignment -name VERILOG_FILE KeyExpansion192.v
-set_global_assignment -name VERILOG_FILE keysof192.v
-set_global_assignment -name VERILOG_FILE keysof128.v
+set_global_assignment -name VERILOG_FILE keys_192.v
+set_global_assignment -name VERILOG_FILE keys_256.v
+set_global_assignment -name VERILOG_FILE KeyExpansion256.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

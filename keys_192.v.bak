@@ -1,9 +1,9 @@
-module Keysof128(
-input [127:0]key,
-output [1396:0]out
+module keys_192(
+input [191:0]key,
+output [2303:0]out
 );
 
-assign out[1396:1269]=key;
+assign out[2303:2112]=key;
 
 genvar i;
 	generate
