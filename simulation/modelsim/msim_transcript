@@ -12,223 +12,162 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/AES.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:15 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/AES.v 
 # -- Compiling module AES
 # 
 # Top level modules:
 # 	AES
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
+# End time: 10:34:15 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/subBytes.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:15 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/subBytes.v 
 # -- Compiling module subBytes
 # 
 # Top level modules:
 # 	subBytes
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
+# End time: 10:34:15 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/sbox.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:16 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/sbox.v 
 # -- Compiling module sbox
 # 
 # Top level modules:
 # 	sbox
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
+# End time: 10:34:16 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:16 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v 
 # -- Compiling module Shift_Rows
 # 
 # Top level modules:
 # 	Shift_Rows
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
+# End time: 10:34:16 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:16 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v 
 # -- Compiling module MixColumns
 # 
 # Top level modules:
 # 	MixColumns
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
+# End time: 10:34:16 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/rotword.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:16 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/rotword.v 
 # -- Compiling module rotword
 # 
 # Top level modules:
 # 	rotword
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
+# End time: 10:34:16 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/SubWord.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:16 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/SubWord.v 
 # -- Compiling module SubWord
 # 
 # Top level modules:
 # 	SubWord
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
+# End time: 10:34:16 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/invsbox.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:16 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/invsbox.v 
 # -- Compiling module invsbox
 # 
 # Top level modules:
 # 	invsbox
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
+# End time: 10:34:16 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/invsubBytes.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:16 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/invsubBytes.v 
 # -- Compiling module invsubBytes
 # 
 # Top level modules:
 # 	invsubBytes
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
+# End time: 10:34:16 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/Rcon.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:16 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/Rcon.v 
 # -- Compiling module Rcon
 # 
 # Top level modules:
 # 	Rcon
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v 
-# -- Compiling module KeyExpansion
-# 
-# Top level modules:
-# 	KeyExpansion
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
+# End time: 10:34:16 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/inv_Shift_Rows.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:16 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/inv_Shift_Rows.v 
 # -- Compiling module inv_Shift_Rows
 # 
 # Top level modules:
 # 	inv_Shift_Rows
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
+# End time: 10:34:16 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/main.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:16 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/main.v 
 # -- Compiling module main
 # 
 # Top level modules:
 # 	main
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
+# End time: 10:34:16 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/AES2.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:16 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/AES2.v 
 # -- Compiling module AES2
 # 
 # Top level modules:
 # 	AES2
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
+# End time: 10:34:16 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/main2.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:16 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/main2.v 
 # -- Compiling module main2
 # 
 # Top level modules:
 # 	main2
-# End time: 23:39:51 on May 14,2022, Elapsed time: 0:00:00
+# End time: 10:34:16 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:39:51 on May 14,2022
+# Start time: 10:34:16 on May 21,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v 
 # -- Compiling module inv_MixColumns
 # 
 # Top level modules:
 # 	inv_MixColumns
-# End time: 23:39:52 on May 14,2022, Elapsed time: 0:00:01
+# End time: 10:34:16 on May 21,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project {C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion192.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:34:16 on May 21,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/AOZ/Desktop/Logic-Project" C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion192.v 
+# -- Compiling module KeyExpansion192
+# 
+# Top level modules:
+# 	KeyExpansion192
+# End time: 10:34:16 on May 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.AES
-# vsim work.AES 
-# Start time: 23:39:54 on May 14,2022
-# Loading work.AES
-# Loading work.main
-# Loading work.KeyExpansion
-# Loading work.rotword
-# Loading work.SubWord
-# Loading work.sbox
-# Loading work.Rcon
-# Loading work.subBytes
-# Loading work.Shift_Rows
-# Loading work.MixColumns
-# Loading work.AES2
-# Loading work.main2
-# Loading work.inv_Shift_Rows
-# Loading work.invsubBytes
-# Loading work.invsbox
-# Loading work.inv_MixColumns
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[2]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[3]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[4]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[5]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[6]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[7]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[8]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES.v(19): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/main.v(6).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/iter_i[9]/r2 File: C:/Users/AOZ/Desktop/Logic-Project/main.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(11): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/ae/m0 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/ae/iter_i[2]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/ae/iter_i[3]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/ae/iter_i[4]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/ae/iter_i[5]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/ae/iter_i[6]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/ae/iter_i[7]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/ae/iter_i[8]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/ae/iter_i[9]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
-# ** Warning: (vsim-3015) C:/Users/AOZ/Desktop/Logic-Project/AES2.v(16): [PCDPC] - Port size (4) does not match connection size (32) for port 'i'. The port definition is at: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /AES/ae/iter_i[10]/m1 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion.v
-add wave -position end  sim:/AES/datain
-add wave -position end  sim:/AES/dataout
-add wave -position 1  sim:/AES/key
-force -freeze sim:/AES/datain 128'h00112233445566778899aabbccddeeff 0
-force -freeze sim:/AES/key 128'h000102030405060708090a0b0c0d0e0f 0
-run

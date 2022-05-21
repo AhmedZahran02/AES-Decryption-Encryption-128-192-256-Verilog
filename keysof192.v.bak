@@ -1,0 +1,7 @@
+module Keysof192(
+input [191:0]key,
+output [2303:0]out
+);
+
+
+endmodule

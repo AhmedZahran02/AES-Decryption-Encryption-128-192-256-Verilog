@@ -6,6 +6,10 @@ module AES(output [127:0] dataout);
 		wire [127:0] r_out[0:9];
 		
 		wire [127:0] keyout[1:10];
+		
+		reg [2303:0] bigout;
+	
+	keysof128 m12(key,bigout);
 	
 	assign r_out[0] = datain^key;
 	wire [127:0] sb,sr;
@@ -20,7 +24,7 @@ module AES(output [127:0] dataout);
 	end
 	endgenerate
 	
-	KeyExpansion t0(keyout[Nk-1],Nk,keyout[Nk]);
+	KeyExpansion192 t0(keyout[Nk-1],Nk,keyout[Nk]);
 	subBytes t1(r_out[Nk-1],sb);
 	Shift_Rows t2(sr,sb);//reversed inputs
 	AES2 ae(datain);

@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "05/14/2022 23:39:15"
+// DATE "05/21/2022 10:31:09"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -179,7 +179,7 @@ wire \~QUARTUS_CREATED_GND~I_combout ;
 
 // Location: IOOBUF_X18_Y81_N93
 cyclonev_io_obuf \dataout[16]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -195,7 +195,7 @@ defparam \dataout[16]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y8_N5
 cyclonev_io_obuf \dataout[17]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -259,7 +259,7 @@ defparam \dataout[20]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X2_Y81_N93
 cyclonev_io_obuf \dataout[21]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -275,7 +275,7 @@ defparam \dataout[21]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X80_Y0_N19
 cyclonev_io_obuf \dataout[22]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -307,7 +307,7 @@ defparam \dataout[23]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X56_Y0_N19
 cyclonev_io_obuf \dataout[24]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -339,7 +339,7 @@ defparam \dataout[25]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X80_Y0_N36
 cyclonev_io_obuf \dataout[26]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -371,7 +371,7 @@ defparam \dataout[27]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X32_Y81_N36
 cyclonev_io_obuf \dataout[28]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -403,7 +403,7 @@ defparam \dataout[29]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X64_Y0_N36
 cyclonev_io_obuf \dataout[30]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -435,7 +435,7 @@ defparam \dataout[31]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X78_Y0_N19
 cyclonev_io_obuf \dataout[40]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -451,7 +451,7 @@ defparam \dataout[40]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y9_N22
 cyclonev_io_obuf \dataout[41]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -515,7 +515,7 @@ defparam \dataout[44]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y4_N79
 cyclonev_io_obuf \dataout[45]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -531,7 +531,7 @@ defparam \dataout[45]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X12_Y0_N2
 cyclonev_io_obuf \dataout[46]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -563,7 +563,7 @@ defparam \dataout[47]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X8_Y0_N19
 cyclonev_io_obuf \dataout[48]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -579,7 +579,7 @@ defparam \dataout[48]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X16_Y81_N53
 cyclonev_io_obuf \dataout[49]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -643,7 +643,7 @@ defparam \dataout[52]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X6_Y0_N36
 cyclonev_io_obuf \dataout[53]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -659,7 +659,7 @@ defparam \dataout[53]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X2_Y81_N59
 cyclonev_io_obuf \dataout[54]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -691,7 +691,7 @@ defparam \dataout[55]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X4_Y81_N53
 cyclonev_io_obuf \dataout[56]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -723,7 +723,7 @@ defparam \dataout[57]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y6_N5
 cyclonev_io_obuf \dataout[58]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -755,7 +755,7 @@ defparam \dataout[59]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X24_Y0_N36
 cyclonev_io_obuf \dataout[60]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -787,7 +787,7 @@ defparam \dataout[61]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X28_Y81_N36
 cyclonev_io_obuf \dataout[62]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -819,7 +819,7 @@ defparam \dataout[63]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y9_N56
 cyclonev_io_obuf \dataout[72]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -835,7 +835,7 @@ defparam \dataout[72]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X58_Y0_N76
 cyclonev_io_obuf \dataout[73]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -899,7 +899,7 @@ defparam \dataout[76]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X80_Y0_N53
 cyclonev_io_obuf \dataout[77]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -915,7 +915,7 @@ defparam \dataout[77]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X52_Y0_N2
 cyclonev_io_obuf \dataout[78]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -947,7 +947,7 @@ defparam \dataout[79]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X34_Y0_N76
 cyclonev_io_obuf \dataout[88]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -979,7 +979,7 @@ defparam \dataout[89]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y23_N56
 cyclonev_io_obuf \dataout[90]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1011,7 +1011,7 @@ defparam \dataout[91]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X66_Y0_N59
 cyclonev_io_obuf \dataout[92]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1043,7 +1043,7 @@ defparam \dataout[93]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X2_Y0_N93
 cyclonev_io_obuf \dataout[94]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1075,7 +1075,7 @@ defparam \dataout[95]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X82_Y0_N93
 cyclonev_io_obuf \dataout[96]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1091,7 +1091,7 @@ defparam \dataout[96]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X58_Y0_N42
 cyclonev_io_obuf \dataout[97]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1155,7 +1155,7 @@ defparam \dataout[100]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X40_Y81_N53
 cyclonev_io_obuf \dataout[101]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1171,7 +1171,7 @@ defparam \dataout[101]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X28_Y0_N53
 cyclonev_io_obuf \dataout[102]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1203,7 +1203,7 @@ defparam \dataout[103]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y23_N5
 cyclonev_io_obuf \dataout[0]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1219,7 +1219,7 @@ defparam \dataout[0]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X70_Y0_N53
 cyclonev_io_obuf \dataout[1]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1283,7 +1283,7 @@ defparam \dataout[4]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X80_Y0_N2
 cyclonev_io_obuf \dataout[5]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1299,7 +1299,7 @@ defparam \dataout[5]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y9_N39
 cyclonev_io_obuf \dataout[6]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1331,7 +1331,7 @@ defparam \dataout[7]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X76_Y0_N53
 cyclonev_io_obuf \dataout[8]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1347,7 +1347,7 @@ defparam \dataout[8]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X14_Y81_N19
 cyclonev_io_obuf \dataout[9]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1411,7 +1411,7 @@ defparam \dataout[12]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X88_Y0_N37
 cyclonev_io_obuf \dataout[13]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1427,7 +1427,7 @@ defparam \dataout[13]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y20_N96
 cyclonev_io_obuf \dataout[14]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1459,7 +1459,7 @@ defparam \dataout[15]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X36_Y0_N53
 cyclonev_io_obuf \dataout[32]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1475,7 +1475,7 @@ defparam \dataout[32]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X70_Y0_N2
 cyclonev_io_obuf \dataout[33]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1539,7 +1539,7 @@ defparam \dataout[36]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y15_N39
 cyclonev_io_obuf \dataout[37]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1555,7 +1555,7 @@ defparam \dataout[37]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y13_N56
 cyclonev_io_obuf \dataout[38]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1587,7 +1587,7 @@ defparam \dataout[39]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X10_Y81_N93
 cyclonev_io_obuf \dataout[64]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1603,7 +1603,7 @@ defparam \dataout[64]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X30_Y0_N53
 cyclonev_io_obuf \dataout[65]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1667,7 +1667,7 @@ defparam \dataout[68]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X30_Y0_N19
 cyclonev_io_obuf \dataout[69]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1683,7 +1683,7 @@ defparam \dataout[69]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X22_Y0_N2
 cyclonev_io_obuf \dataout[70]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1715,7 +1715,7 @@ defparam \dataout[71]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X26_Y0_N76
 cyclonev_io_obuf \dataout[80]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1731,7 +1731,7 @@ defparam \dataout[80]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X70_Y0_N19
 cyclonev_io_obuf \dataout[81]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1795,7 +1795,7 @@ defparam \dataout[84]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X50_Y0_N76
 cyclonev_io_obuf \dataout[85]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1811,7 +1811,7 @@ defparam \dataout[85]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X30_Y0_N2
 cyclonev_io_obuf \dataout[86]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1843,7 +1843,7 @@ defparam \dataout[87]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X74_Y0_N76
 cyclonev_io_obuf \dataout[104]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1859,7 +1859,7 @@ defparam \dataout[104]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y25_N22
 cyclonev_io_obuf \dataout[105]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1923,7 +1923,7 @@ defparam \dataout[108]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y6_N22
 cyclonev_io_obuf \dataout[109]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1939,7 +1939,7 @@ defparam \dataout[109]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y8_N22
 cyclonev_io_obuf \dataout[110]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1971,7 +1971,7 @@ defparam \dataout[111]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X6_Y0_N19
 cyclonev_io_obuf \dataout[112]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -1987,7 +1987,7 @@ defparam \dataout[112]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X2_Y81_N76
 cyclonev_io_obuf \dataout[113]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -2051,7 +2051,7 @@ defparam \dataout[116]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y8_N56
 cyclonev_io_obuf \dataout[117]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -2067,7 +2067,7 @@ defparam \dataout[117]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y4_N45
 cyclonev_io_obuf \dataout[118]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -2099,7 +2099,7 @@ defparam \dataout[119]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y11_N96
 cyclonev_io_obuf \dataout[120]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -2131,7 +2131,7 @@ defparam \dataout[121]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X20_Y0_N53
 cyclonev_io_obuf \dataout[122]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -2163,7 +2163,7 @@ defparam \dataout[123]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X22_Y81_N19
 cyclonev_io_obuf \dataout[124]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -2195,7 +2195,7 @@ defparam \dataout[125]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X82_Y0_N76
 cyclonev_io_obuf \dataout[126]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),

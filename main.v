@@ -7,9 +7,9 @@ input [3:0]i
 );
 
 wire [127:0] sb,sr,mcl;
-	 
-	
-KeyExpansion m0(key,i,keyout);
+
+//KeyExpansion128 m0(key,i,keyout);
+//KeyExpansion192 m4(key,i,keyout);
 subBytes m1(in,sb);
 Shift_Rows m2(sr,sb);//reversed inputs
 MixColumns m3(sr,mcl);
