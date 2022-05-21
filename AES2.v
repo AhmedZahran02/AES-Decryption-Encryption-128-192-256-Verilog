@@ -3,10 +3,8 @@ module AES2
 	parameter Nk=8,
 	parameter Nr=14
 )
-(output [127:0] dataout);
+(output [127:0] dataout,input [127:0] datain,input [Nk*32:0] key);
 
-	wire [127:0] datain;
-	wire [Nk*32:0] key;
 	reg [127:0] state;
 	wire [127:0] r_out[0:Nr-1];
 	
@@ -36,7 +34,6 @@ module AES2
 	
 	assign r_out[0] = datain^initialKey;
 	
-	//main2 m2(.in(r_out[0]),.key(keyout[9]),.out(r_out[1]));
 	genvar ik;
 	generate
 	for(ik=Nr-1;ik>=1;ik=ik-1)
@@ -67,8 +64,5 @@ module AES2
 		end
 	end
 	assign dataout=finalKey^sb;
-	//state=datain;
-	//state=datain^keyout[10];
-	
 	  
 endmodule

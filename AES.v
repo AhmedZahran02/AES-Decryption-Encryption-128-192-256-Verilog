@@ -1,13 +1,10 @@
 module AES
 #(
-	parameter [3:0]Nk=8,
-	parameter [3:0]Nr=14
+	parameter Nk=8,
+	parameter Nr=14
 )
-(output [127:0] dataout);
+(output [127:0] dataout,input [127:0] datain ,input[Nk*32-1:0] key);
 
-		wire [127:0] datain;
-		wire [Nk*32-1:0] key;
-		//parameter [3:0]Nk=10;
 		wire [127:0] r_out[0:Nr-1];
 		
 		wire [127:0] keyout[1:Nr];
@@ -56,10 +53,8 @@ module AES
 	end
 	endgenerate
 	
-	//KeyExpansion192 t0(keyout[Nk-1],Nk,keyout[Nk]);
 	subBytes t1(r_out[Nr-1],sb);
 	Shift_Rows t2(sr,sb);//reversed inputs
-	AES2 ae(datain);
 	
 	reg [127:0] finalKey;
 	always @(*) begin
