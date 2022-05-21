@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/AOZ/Desktop/Logic-Project/simulation/modelsim
 vAES
-Z1 !s110 1653122055
+Z1 !s110 1653140349
 !i10b 1
-!s100 _LhlF;LmUXb8U5MOIX?aK1
-IE:Uc@<[JQJ7]hA]OR?3fB1
+!s100 B]7FiD:J5kfN5obDcZ<Xl2
+IoD2P=_HPIgbzZ30io9L1b0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1653120103
+w1653139904
 8C:/Users/AOZ/Desktop/Logic-Project/AES.v
 FC:/Users/AOZ/Desktop/Logic-Project/AES.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1653122055.000000
+Z4 !s108 1653140349.000000
 !s107 C:/Users/AOZ/Desktop/Logic-Project/AES.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/AES.v|
 !i113 1
@@ -32,13 +32,13 @@ Z6 !s92 -vlog01compat -work work +incdir+C:/Users/AOZ/Desktop/Logic-Project
 Z7 tCvgOpt 0
 n@a@e@s
 vAES2
-Z8 !s110 1653122056
+Z8 !s110 1653140350
 !i10b 1
-!s100 Z[XZE`4BPkM3M8AQISC_52
-IWf71ikZ9?ANf:eZV;jLoe2
+!s100 Xh1HTJg9MnY?F_MN1cKSP2
+IU_[0NM=MN;Qe3586MX?k[0
 R2
 R0
-w1653120107
+w1653138339
 8C:/Users/AOZ/Desktop/Logic-Project/AES2.v
 FC:/Users/AOZ/Desktop/Logic-Project/AES2.v
 L0 1
@@ -46,7 +46,7 @@ R3
 r1
 !s85 0
 31
-Z9 !s108 1653122056.000000
+Z9 !s108 1653140350.000000
 !s107 C:/Users/AOZ/Desktop/Logic-Project/AES2.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/AES2.v|
 !i113 1
@@ -145,6 +145,29 @@ R5
 R6
 R7
 ninvsub@bytes
+vKeyExpansion128
+R8
+!i10b 1
+!s100 DKO2WXhLP3ei5PP<4@JAi2
+IH]4:KUb=1QL_2]@b[:?400
+R2
+R0
+w1653119404
+8C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion128.v
+FC:/Users/AOZ/Desktop/Logic-Project/KeyExpansion128.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion128.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion128.v|
+!i113 1
+R5
+R6
+R7
+n@key@expansion128
 vKeyExpansion192
 R8
 !i10b 1
@@ -168,14 +191,103 @@ R5
 R6
 R7
 n@key@expansion192
+vKeyExpansion256
+Z10 !s110 1653140351
+!i10b 1
+!s100 5DgTc^RhCRmfcC^AA4XFM2
+I1iAR8nF6PcIMW?Y=@:0@62
+R2
+R0
+w1653130288
+8C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion256.v
+FC:/Users/AOZ/Desktop/Logic-Project/KeyExpansion256.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z11 !s108 1653140351.000000
+!s107 C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion256.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion256.v|
+!i113 1
+R5
+R6
+R7
+n@key@expansion256
+vkeys_128
+R1
+!i10b 1
+!s100 eeg=obakXkzgAPgT@U8`U0
+I@DXK9PeM3_k__@Fc9W]2N3
+R2
+R0
+w1653126206
+8C:/Users/AOZ/Desktop/Logic-Project/Keys_128.v
+FC:/Users/AOZ/Desktop/Logic-Project/Keys_128.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/AOZ/Desktop/Logic-Project/Keys_128.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/Keys_128.v|
+!i113 1
+R5
+R6
+R7
+vkeys_192
+R8
+!i10b 1
+!s100 `0[HjPki^<S50LA]AVi6P1
+IRYOE1o3oQLG0Rjh?Si>o]2
+R2
+R0
+w1653128950
+8C:/Users/AOZ/Desktop/Logic-Project/keys_192.v
+FC:/Users/AOZ/Desktop/Logic-Project/keys_192.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/AOZ/Desktop/Logic-Project/keys_192.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/keys_192.v|
+!i113 1
+R5
+R6
+R7
+vkeys_256
+R10
+!i10b 1
+!s100 n>c1JBDOWAC2]6JQEN2>F0
+I;hP0VzEE?A<dMVgkJA8cW1
+R2
+R0
+w1653131168
+8C:/Users/AOZ/Desktop/Logic-Project/keys_256.v
+FC:/Users/AOZ/Desktop/Logic-Project/keys_256.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/AOZ/Desktop/Logic-Project/keys_256.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/keys_256.v|
+!i113 1
+R5
+R6
+R7
 vmain
 R8
 !i10b 1
-!s100 c5QECD^8Z9g][mnUiLol^1
-IZFGl7YPb2SAb9QmEiBBBc0
+!s100 hnh]>LNUl4gK[JF>gHU8j1
+IO?04_DImf10_^EnX:n8gC1
 R2
 R0
-w1653121799
+w1653138064
 8C:/Users/AOZ/Desktop/Logic-Project/main.v
 FC:/Users/AOZ/Desktop/Logic-Project/main.v
 L0 1
@@ -213,7 +325,7 @@ R5
 R6
 R7
 vMixColumns
-R8
+R1
 !i10b 1
 !s100 IXdYPEO[Q0c?fD]kPcJ7<2
 IFHPQcic=A=?=n_9<T?1o41
@@ -227,7 +339,7 @@ R3
 r1
 !s85 0
 31
-R9
+R4
 !s107 C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v|
 !i113 1
@@ -259,7 +371,7 @@ R6
 R7
 n@rcon
 vrotword
-R8
+R1
 !i10b 1
 !s100 U<gK@OPdO@Q@C492i`jl13
 Id7O^9c6:>U@@iCR?Ob^]f3
@@ -273,7 +385,7 @@ R3
 r1
 !s85 0
 31
-R9
+R4
 !s107 C:/Users/AOZ/Desktop/Logic-Project/rotword.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/rotword.v|
 !i113 1
@@ -281,7 +393,7 @@ R5
 R6
 R7
 vsbox
-R8
+R1
 !i10b 1
 !s100 V9_@Ie17SgRZTj]7Rkgh@0
 Igiz5DO^doiTSSFD;f9RGa1
@@ -295,7 +407,7 @@ R3
 r1
 !s85 0
 31
-R9
+R4
 !s107 C:/Users/AOZ/Desktop/Logic-Project/sbox.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/sbox.v|
 !i113 1
@@ -303,7 +415,7 @@ R5
 R6
 R7
 vShift_Rows
-R8
+R1
 !i10b 1
 !s100 T>Xb9dgacjSVZY`:Xco??1
 ILzO][dL:LdXF4R@EBQCJQ1
@@ -317,7 +429,7 @@ R3
 r1
 !s85 0
 31
-R9
+R4
 !s107 C:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v|
 !i113 1
@@ -363,7 +475,7 @@ R3
 r1
 !s85 0
 31
-R9
+R4
 !s107 C:/Users/AOZ/Desktop/Logic-Project/SubWord.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/SubWord.v|
 !i113 1
@@ -371,3 +483,26 @@ R5
 R6
 R7
 n@sub@word
+vWrapper
+R10
+!i10b 1
+!s100 z2R^bMO=D4NJNTzehSVi<2
+I`<RbXDLohN]Dkedd=Rj?l2
+R2
+R0
+w1653140210
+8C:/Users/AOZ/Desktop/Logic-Project/Wrapper.v
+FC:/Users/AOZ/Desktop/Logic-Project/Wrapper.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/AOZ/Desktop/Logic-Project/Wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/AOZ/Desktop/Logic-Project|C:/Users/AOZ/Desktop/Logic-Project/Wrapper.v|
+!i113 1
+R5
+R6
+R7
+n@wrapper
