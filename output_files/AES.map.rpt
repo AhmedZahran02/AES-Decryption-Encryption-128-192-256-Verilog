@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AES
-Sat May 21 10:49:28 2022
+Sat May 21 11:16:26 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,10 +36,10 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Sat May 21 10:49:28 2022           ;
+; Analysis & Synthesis Status ; Failed - Sat May 21 11:16:26 2022           ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; AES                                         ;
-; Top-level Entity Name       ; AES                                         ;
+; Top-level Entity Name       ; keysof128                                   ;
 ; Family                      ; Cyclone V                                   ;
 ; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
 ; Total registers             ; N/A until Partition Merge                   ;
@@ -57,7 +57,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; AES                ; AES                ;
+; Top-level entity name                                                           ; keysof128          ; AES                ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -143,8 +143,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -160,198 +160,54 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat May 21 10:49:17 2022
+    Info: Processing started: Sat May 21 11:16:18 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AES -c AES
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file aes.v
-    Info (12023): Found entity 1: AES File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 1
+    Info (12023): Found entity 1: AES File: C:/Users/ibrah/Documents/GitHub/Logic-Project/AES.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file subbytes.v
-    Info (12023): Found entity 1: subBytes File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v Line: 1
+    Info (12023): Found entity 1: subBytes File: C:/Users/ibrah/Documents/GitHub/Logic-Project/subBytes.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sbox.v
-    Info (12023): Found entity 1: sbox File: C:/Users/AOZ/Desktop/Logic-Project/sbox.v Line: 1
+    Info (12023): Found entity 1: sbox File: C:/Users/ibrah/Documents/GitHub/Logic-Project/sbox.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shift_rows.v
-    Info (12023): Found entity 1: Shift_Rows File: C:/Users/AOZ/Desktop/Logic-Project/Shift_Rows.v Line: 1
+    Info (12023): Found entity 1: Shift_Rows File: C:/Users/ibrah/Documents/GitHub/Logic-Project/Shift_Rows.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mixcolumns.v
-    Info (12023): Found entity 1: MixColumns File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 1
+    Info (12023): Found entity 1: MixColumns File: C:/Users/ibrah/Documents/GitHub/Logic-Project/MixColumns.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rotword.v
-    Info (12023): Found entity 1: rotword File: C:/Users/AOZ/Desktop/Logic-Project/rotword.v Line: 1
+    Info (12023): Found entity 1: rotword File: C:/Users/ibrah/Documents/GitHub/Logic-Project/rotword.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file subword.v
-    Info (12023): Found entity 1: SubWord File: C:/Users/AOZ/Desktop/Logic-Project/SubWord.v Line: 1
+    Info (12023): Found entity 1: SubWord File: C:/Users/ibrah/Documents/GitHub/Logic-Project/SubWord.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file invsbox.v
-    Info (12023): Found entity 1: invsbox File: C:/Users/AOZ/Desktop/Logic-Project/invsbox.v Line: 1
+    Info (12023): Found entity 1: invsbox File: C:/Users/ibrah/Documents/GitHub/Logic-Project/invsbox.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file invsubbytes.v
-    Info (12023): Found entity 1: invsubBytes File: C:/Users/AOZ/Desktop/Logic-Project/invsubBytes.v Line: 1
+    Info (12023): Found entity 1: invsubBytes File: C:/Users/ibrah/Documents/GitHub/Logic-Project/invsubBytes.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rcon.v
-    Info (12023): Found entity 1: Rcon File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 1
+    Info (12023): Found entity 1: Rcon File: C:/Users/ibrah/Documents/GitHub/Logic-Project/Rcon.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file addroundkey.v
-    Info (12023): Found entity 1: AddRoundKey File: C:/Users/AOZ/Desktop/Logic-Project/AddRoundKey.v Line: 1
-Warning (12019): Can't analyze file -- file KeyExpansion.v is missing
+    Info (12023): Found entity 1: AddRoundKey File: C:/Users/ibrah/Documents/GitHub/Logic-Project/AddRoundKey.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file inv_shift_rows.v
-    Info (12023): Found entity 1: inv_Shift_Rows File: C:/Users/AOZ/Desktop/Logic-Project/inv_Shift_Rows.v Line: 1
+    Info (12023): Found entity 1: inv_Shift_Rows File: C:/Users/ibrah/Documents/GitHub/Logic-Project/inv_Shift_Rows.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main.v
-    Info (12023): Found entity 1: main File: C:/Users/AOZ/Desktop/Logic-Project/main.v Line: 1
+    Info (12023): Found entity 1: main File: C:/Users/ibrah/Documents/GitHub/Logic-Project/main.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file aes2.v
-    Info (12023): Found entity 1: AES2 File: C:/Users/AOZ/Desktop/Logic-Project/AES2.v Line: 1
+    Info (12023): Found entity 1: AES2 File: C:/Users/ibrah/Documents/GitHub/Logic-Project/AES2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main2.v
-    Info (12023): Found entity 1: main2 File: C:/Users/AOZ/Desktop/Logic-Project/main2.v Line: 1
+    Info (12023): Found entity 1: main2 File: C:/Users/ibrah/Documents/GitHub/Logic-Project/main2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file inv_mixcolumns.v
-    Info (12023): Found entity 1: inv_MixColumns File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 1
+    Info (12023): Found entity 1: inv_MixColumns File: C:/Users/ibrah/Documents/GitHub/Logic-Project/inv_MixColumns.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file keyexpansion128.v
-    Info (12023): Found entity 1: KeyExpansion128 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion128.v Line: 1
+    Info (12023): Found entity 1: KeyExpansion128 File: C:/Users/ibrah/Documents/GitHub/Logic-Project/KeyExpansion128.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file keyexpansion192.v
-    Info (12023): Found entity 1: KeyExpansion192 File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion192.v Line: 1
+    Info (12023): Found entity 1: KeyExpansion192 File: C:/Users/ibrah/Documents/GitHub/Logic-Project/KeyExpansion192.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file keysof192.v
-    Info (12023): Found entity 1: Keysof192 File: C:/Users/AOZ/Desktop/Logic-Project/keysof192.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file keysof128.v
-    Info (12023): Found entity 1: Keysof128 File: C:/Users/AOZ/Desktop/Logic-Project/keysof128.v Line: 1
-Info (12127): Elaborating entity "AES" for the top level hierarchy
-Info (12128): Elaborating entity "main" for hierarchy "main:r1" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 17
-Warning (10030): Net "keyout" at main.v(5) has no driver or initial value, using a default initial value '0' File: C:/Users/AOZ/Desktop/Logic-Project/main.v Line: 5
-Info (12128): Elaborating entity "subBytes" for hierarchy "main:r1|subBytes:m1" File: C:/Users/AOZ/Desktop/Logic-Project/main.v Line: 13
-Info (12128): Elaborating entity "sbox" for hierarchy "main:r1|subBytes:m1|sbox:q0" File: C:/Users/AOZ/Desktop/Logic-Project/subBytes.v Line: 6
-Info (12128): Elaborating entity "Shift_Rows" for hierarchy "main:r1|Shift_Rows:m2" File: C:/Users/AOZ/Desktop/Logic-Project/main.v Line: 14
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "ar2din" into its bus
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "ar2dout" into its bus
-Info (12128): Elaborating entity "MixColumns" for hierarchy "main:r1|MixColumns:m3" File: C:/Users/AOZ/Desktop/Logic-Project/main.v Line: 15
-Warning (10240): Verilog HDL Always Construct warning at MixColumns.v(20): inferring latch(es) for variable "catch", which holds its previous value in one or more paths through the always construct File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 20
-Info (10041): Inferred latch for "hhh[3][0]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[3][1]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[3][2]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[3][3]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[3][4]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[3][5]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[3][6]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[3][7]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[2][0]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[2][1]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[2][2]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[2][3]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[2][4]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[2][5]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[2][6]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[2][7]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[1][0]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[1][1]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[1][2]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[1][3]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[1][4]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[1][5]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[1][6]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[1][7]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[0][0]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[0][1]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[0][2]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[0][3]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[0][4]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[0][5]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[0][6]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10041): Inferred latch for "hhh[0][7]" at MixColumns.v(36) File: C:/Users/AOZ/Desktop/Logic-Project/MixColumns.v Line: 36
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "state" into its bus
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "temp" into its bus
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "mixer" into its bus
-Info (12128): Elaborating entity "KeyExpansion192" for hierarchy "KeyExpansion192:t0" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 27
-Info (12128): Elaborating entity "rotword" for hierarchy "KeyExpansion192:t0|rotword:rt" File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion192.v Line: 9
-Info (12128): Elaborating entity "SubWord" for hierarchy "KeyExpansion192:t0|SubWord:m0" File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion192.v Line: 10
-Info (12128): Elaborating entity "Rcon" for hierarchy "KeyExpansion192:t0|Rcon:m1" File: C:/Users/AOZ/Desktop/Logic-Project/KeyExpansion192.v Line: 11
-Warning (10270): Verilog HDL Case Statement warning at Rcon.v(5): incomplete case statement has no default case item File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 5
-Warning (10240): Verilog HDL Always Construct warning at Rcon.v(4): inferring latch(es) for variable "word", which holds its previous value in one or more paths through the always construct File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[0]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[1]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[2]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[3]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[4]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[5]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[6]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[7]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[8]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[9]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[10]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[11]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[12]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[13]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[14]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[15]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[16]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[17]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[18]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[19]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[20]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[21]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[22]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[23]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[24]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[25]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[26]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[27]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[28]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[29]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[30]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (10041): Inferred latch for "word[31]" at Rcon.v(4) File: C:/Users/AOZ/Desktop/Logic-Project/Rcon.v Line: 4
-Info (12128): Elaborating entity "AES2" for hierarchy "AES2:ae" File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 30
-Warning (10858): Verilog HDL warning at AES2.v(3): object datain used but never assigned File: C:/Users/AOZ/Desktop/Logic-Project/AES2.v Line: 3
-Warning (10858): Verilog HDL warning at AES2.v(4): object key used but never assigned File: C:/Users/AOZ/Desktop/Logic-Project/AES2.v Line: 4
-Warning (10030): Net "datain" at AES2.v(3) has no driver or initial value, using a default initial value '0' File: C:/Users/AOZ/Desktop/Logic-Project/AES2.v Line: 3
-Warning (10030): Net "key" at AES2.v(4) has no driver or initial value, using a default initial value '0' File: C:/Users/AOZ/Desktop/Logic-Project/AES2.v Line: 4
-Warning (10030): Net "keyout[10]" at AES2.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/AOZ/Desktop/Logic-Project/AES2.v Line: 8
-Info (12128): Elaborating entity "main2" for hierarchy "AES2:ae|main2:m2" File: C:/Users/AOZ/Desktop/Logic-Project/AES2.v Line: 21
-Info (12128): Elaborating entity "inv_Shift_Rows" for hierarchy "AES2:ae|main2:m2|inv_Shift_Rows:m1" File: C:/Users/AOZ/Desktop/Logic-Project/main2.v Line: 10
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "ar2din" into its bus
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "ar2dout" into its bus
-Info (12128): Elaborating entity "invsubBytes" for hierarchy "AES2:ae|main2:m2|invsubBytes:m2" File: C:/Users/AOZ/Desktop/Logic-Project/main2.v Line: 11
-Info (12128): Elaborating entity "invsbox" for hierarchy "AES2:ae|main2:m2|invsubBytes:m2|invsbox:q0" File: C:/Users/AOZ/Desktop/Logic-Project/invsubBytes.v Line: 6
-Info (12128): Elaborating entity "inv_MixColumns" for hierarchy "AES2:ae|main2:m2|inv_MixColumns:m3" File: C:/Users/AOZ/Desktop/Logic-Project/main2.v Line: 13
-Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "hhh1", which holds its previous value in one or more paths through the always construct File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "catch", which holds its previous value in one or more paths through the always construct File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "l1", which holds its previous value in one or more paths through the always construct File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "hhh2", which holds its previous value in one or more paths through the always construct File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "l2", which holds its previous value in one or more paths through the always construct File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "l5", which holds its previous value in one or more paths through the always construct File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "hhh3", which holds its previous value in one or more paths through the always construct File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "l3", which holds its previous value in one or more paths through the always construct File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "hhh4", which holds its previous value in one or more paths through the always construct File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "l4", which holds its previous value in one or more paths through the always construct File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 24
-Warning (10240): Verilog HDL Always Construct warning at inv_MixColumns.v(24): inferring latch(es) for variable "l6", which holds its previous value in one or more paths through the always construct File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 24
-Info (10041): Inferred latch for "hhh[3][0]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[3][1]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[3][2]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[3][3]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[3][4]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[3][5]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[3][6]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[3][7]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[2][0]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[2][1]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[2][2]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[2][3]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[2][4]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[2][5]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[2][6]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[2][7]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[1][0]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[1][1]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[1][2]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[1][3]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[1][4]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[1][5]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[1][6]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[1][7]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[0][0]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[0][1]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[0][2]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[0][3]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[0][4]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[0][5]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[0][6]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10041): Inferred latch for "hhh[0][7]" at inv_MixColumns.v(66) File: C:/Users/AOZ/Desktop/Logic-Project/inv_MixColumns.v Line: 66
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "state" into its bus
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "temp" into its bus
-Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "mixer" into its bus
-Error (12006): Node instance "m12" instantiates undefined entity "keysof128". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/AOZ/Desktop/Logic-Project/AES.v Line: 12
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 22 warnings
-    Error: Peak virtual memory: 4803 megabytes
-    Error: Processing ended: Sat May 21 10:49:28 2022
-    Error: Elapsed time: 00:00:11
-    Error: Total CPU time (on all processors): 00:00:22
+    Info (12023): Found entity 1: Keysof192 File: C:/Users/ibrah/Documents/GitHub/Logic-Project/keysof192.v Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file keysof128.v
+Error (12007): Top-level design entity "keysof128" is undefined
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
+    Error: Peak virtual memory: 4769 megabytes
+    Error: Processing ended: Sat May 21 11:16:26 2022
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:18
 
 
