@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "05/21/2022 15:38:46"
+// DATE "05/21/2022 16:10:38"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -43,12 +43,12 @@ output 	led192inv;
 output 	led256inv;
 
 // Design Ports Information
-// led256	=>  Location: PIN_AG8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// led192	=>  Location: PIN_E3,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// led128	=>  Location: PIN_AH28,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// led256inv	=>  Location: PIN_AD20,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// led192inv	=>  Location: PIN_AD30,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// led128inv	=>  Location: PIN_AK3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led256inv	=>  Location: PIN_AG8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led192inv	=>  Location: PIN_E3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led128inv	=>  Location: PIN_AH28,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led256	=>  Location: PIN_AD20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led192	=>  Location: PIN_AD30,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led128	=>  Location: PIN_AK3,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -66,56 +66,8 @@ wire \~QUARTUS_CREATED_GND~I_combout ;
 
 
 // Location: IOOBUF_X8_Y0_N53
-cyclonev_io_obuf \led256~output (
-	.i(gnd),
-	.oe(vcc),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(led256),
-	.obar());
-// synopsys translate_off
-defparam \led256~output .bus_hold = "false";
-defparam \led256~output .open_drain_output = "false";
-defparam \led256~output .shift_series_termination_control = "false";
-// synopsys translate_on
-
-// Location: IOOBUF_X8_Y81_N36
-cyclonev_io_obuf \led192~output (
-	.i(gnd),
-	.oe(vcc),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(led192),
-	.obar());
-// synopsys translate_off
-defparam \led192~output .bus_hold = "false";
-defparam \led192~output .open_drain_output = "false";
-defparam \led192~output .shift_series_termination_control = "false";
-// synopsys translate_on
-
-// Location: IOOBUF_X89_Y4_N96
-cyclonev_io_obuf \led128~output (
-	.i(gnd),
-	.oe(vcc),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(led128),
-	.obar());
-// synopsys translate_off
-defparam \led128~output .bus_hold = "false";
-defparam \led128~output .open_drain_output = "false";
-defparam \led128~output .shift_series_termination_control = "false";
-// synopsys translate_on
-
-// Location: IOOBUF_X82_Y0_N42
 cyclonev_io_obuf \led256inv~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -129,9 +81,9 @@ defparam \led256inv~output .open_drain_output = "false";
 defparam \led256inv~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X89_Y25_N39
+// Location: IOOBUF_X8_Y81_N36
 cyclonev_io_obuf \led192inv~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -145,9 +97,9 @@ defparam \led192inv~output .open_drain_output = "false";
 defparam \led192inv~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X20_Y0_N53
+// Location: IOOBUF_X89_Y4_N96
 cyclonev_io_obuf \led128inv~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -159,6 +111,54 @@ cyclonev_io_obuf \led128inv~output (
 defparam \led128inv~output .bus_hold = "false";
 defparam \led128inv~output .open_drain_output = "false";
 defparam \led128inv~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X82_Y0_N42
+cyclonev_io_obuf \led256~output (
+	.i(vcc),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(led256),
+	.obar());
+// synopsys translate_off
+defparam \led256~output .bus_hold = "false";
+defparam \led256~output .open_drain_output = "false";
+defparam \led256~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X89_Y25_N39
+cyclonev_io_obuf \led192~output (
+	.i(vcc),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(led192),
+	.obar());
+// synopsys translate_off
+defparam \led192~output .bus_hold = "false";
+defparam \led192~output .open_drain_output = "false";
+defparam \led192~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X20_Y0_N53
+cyclonev_io_obuf \led128~output (
+	.i(vcc),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(led128),
+	.obar());
+// synopsys translate_off
+defparam \led128~output .bus_hold = "false";
+defparam \led128~output .open_drain_output = "false";
+defparam \led128~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
 // Location: LABCELL_X36_Y28_N0
