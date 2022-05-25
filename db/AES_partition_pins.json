@@ -2,7 +2,40 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "led192",
+					"strict" : false
+				},
+				{
+					"name" : "led256",
+					"strict" : false
+				},
+				{
+					"name" : "led128inv",
+					"strict" : false
+				},
+				{
+					"name" : "led192inv",
+					"strict" : false
+				},
+				{
+					"name" : "led256inv",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "en",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

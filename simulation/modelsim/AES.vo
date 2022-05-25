@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "05/21/2022 16:10:38"
+// DATE "05/25/2022 11:50:57"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -34,21 +34,30 @@ module Wrapper (
 	led256,
 	led128inv,
 	led192inv,
-	led256inv);
+	led256inv,
+	en,
+	reset,
+	clk);
 output 	led128;
 output 	led192;
 output 	led256;
 output 	led128inv;
 output 	led192inv;
 output 	led256inv;
+input 	en;
+input 	reset;
+input 	clk;
 
 // Design Ports Information
-// led256inv	=>  Location: PIN_AG8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// led192inv	=>  Location: PIN_E3,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// led128inv	=>  Location: PIN_AH28,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// led256	=>  Location: PIN_AD20,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// led192	=>  Location: PIN_AD30,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// led128	=>  Location: PIN_AK3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led128	=>  Location: PIN_V16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led192	=>  Location: PIN_V17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led256	=>  Location: PIN_W17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led128inv	=>  Location: PIN_W16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led192inv	=>  Location: PIN_V18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led256inv	=>  Location: PIN_W19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// reset	=>  Location: PIN_AC12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_AF14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// en	=>  Location: PIN_AB12,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -63,91 +72,26 @@ tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
 wire \~QUARTUS_CREATED_GND~I_combout ;
+wire \clk~input_o ;
+wire \clk~inputCLKENA0_outclk ;
+wire \reset~input_o ;
+wire \led192~0_combout ;
+wire \en~input_o ;
+wire \led128~0_combout ;
+wire \led192~reg0_q ;
+wire \led256~0_combout ;
+wire \led256~reg0_q ;
+wire \led128inv~0_combout ;
+wire \led128inv~reg0_q ;
+wire \led192inv~0_combout ;
+wire \led192inv~reg0_q ;
+wire \led256inv~0_combout ;
+wire \led256inv~reg0_q ;
 
 
-// Location: IOOBUF_X8_Y0_N53
-cyclonev_io_obuf \led256inv~output (
-	.i(vcc),
-	.oe(vcc),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(led256inv),
-	.obar());
-// synopsys translate_off
-defparam \led256inv~output .bus_hold = "false";
-defparam \led256inv~output .open_drain_output = "false";
-defparam \led256inv~output .shift_series_termination_control = "false";
-// synopsys translate_on
-
-// Location: IOOBUF_X8_Y81_N36
-cyclonev_io_obuf \led192inv~output (
-	.i(vcc),
-	.oe(vcc),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(led192inv),
-	.obar());
-// synopsys translate_off
-defparam \led192inv~output .bus_hold = "false";
-defparam \led192inv~output .open_drain_output = "false";
-defparam \led192inv~output .shift_series_termination_control = "false";
-// synopsys translate_on
-
-// Location: IOOBUF_X89_Y4_N96
-cyclonev_io_obuf \led128inv~output (
-	.i(vcc),
-	.oe(vcc),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(led128inv),
-	.obar());
-// synopsys translate_off
-defparam \led128inv~output .bus_hold = "false";
-defparam \led128inv~output .open_drain_output = "false";
-defparam \led128inv~output .shift_series_termination_control = "false";
-// synopsys translate_on
-
-// Location: IOOBUF_X82_Y0_N42
-cyclonev_io_obuf \led256~output (
-	.i(vcc),
-	.oe(vcc),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(led256),
-	.obar());
-// synopsys translate_off
-defparam \led256~output .bus_hold = "false";
-defparam \led256~output .open_drain_output = "false";
-defparam \led256~output .shift_series_termination_control = "false";
-// synopsys translate_on
-
-// Location: IOOBUF_X89_Y25_N39
-cyclonev_io_obuf \led192~output (
-	.i(vcc),
-	.oe(vcc),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.devoe(devoe),
-	.o(led192),
-	.obar());
-// synopsys translate_off
-defparam \led192~output .bus_hold = "false";
-defparam \led192~output .open_drain_output = "false";
-defparam \led192~output .shift_series_termination_control = "false";
-// synopsys translate_on
-
-// Location: IOOBUF_X20_Y0_N53
+// Location: IOOBUF_X52_Y0_N2
 cyclonev_io_obuf \led128~output (
-	.i(vcc),
+	.i(gnd),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -161,7 +105,373 @@ defparam \led128~output .open_drain_output = "false";
 defparam \led128~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: LABCELL_X36_Y28_N0
+// Location: IOOBUF_X60_Y0_N2
+cyclonev_io_obuf \led192~output (
+	.i(\led192~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(led192),
+	.obar());
+// synopsys translate_off
+defparam \led192~output .bus_hold = "false";
+defparam \led192~output .open_drain_output = "false";
+defparam \led192~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X60_Y0_N19
+cyclonev_io_obuf \led256~output (
+	.i(\led256~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(led256),
+	.obar());
+// synopsys translate_off
+defparam \led256~output .bus_hold = "false";
+defparam \led256~output .open_drain_output = "false";
+defparam \led256~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X52_Y0_N19
+cyclonev_io_obuf \led128inv~output (
+	.i(\led128inv~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(led128inv),
+	.obar());
+// synopsys translate_off
+defparam \led128inv~output .bus_hold = "false";
+defparam \led128inv~output .open_drain_output = "false";
+defparam \led128inv~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X80_Y0_N2
+cyclonev_io_obuf \led192inv~output (
+	.i(\led192inv~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(led192inv),
+	.obar());
+// synopsys translate_off
+defparam \led192inv~output .bus_hold = "false";
+defparam \led192inv~output .open_drain_output = "false";
+defparam \led192inv~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X80_Y0_N19
+cyclonev_io_obuf \led256inv~output (
+	.i(\led256inv~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(led256inv),
+	.obar());
+// synopsys translate_off
+defparam \led256inv~output .bus_hold = "false";
+defparam \led256inv~output .open_drain_output = "false";
+defparam \led256inv~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X32_Y0_N1
+cyclonev_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G6
+cyclonev_clkena \clk~inputCLKENA0 (
+	.inclk(\clk~input_o ),
+	.ena(vcc),
+	.outclk(\clk~inputCLKENA0_outclk ),
+	.enaout());
+// synopsys translate_off
+defparam \clk~inputCLKENA0 .clock_type = "global clock";
+defparam \clk~inputCLKENA0 .disable_mode = "low";
+defparam \clk~inputCLKENA0 .ena_register_mode = "always enabled";
+defparam \clk~inputCLKENA0 .ena_register_power_up = "high";
+defparam \clk~inputCLKENA0 .test_syn = "high";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y0_N1
+cyclonev_io_ibuf \reset~input (
+	.i(reset),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\reset~input_o ));
+// synopsys translate_off
+defparam \reset~input .bus_hold = "false";
+defparam \reset~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LABCELL_X57_Y2_N30
+cyclonev_lcell_comb \led192~0 (
+// Equation(s):
+// \led192~0_combout  = ( !\reset~input_o  )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(!\reset~input_o ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led192~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led192~0 .extended_lut = "off";
+defparam \led192~0 .lut_mask = 64'hFFFF0000FFFF0000;
+defparam \led192~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: IOIBUF_X12_Y0_N18
+cyclonev_io_ibuf \en~input (
+	.i(en),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\en~input_o ));
+// synopsys translate_off
+defparam \en~input .bus_hold = "false";
+defparam \en~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LABCELL_X57_Y2_N3
+cyclonev_lcell_comb \led128~0 (
+// Equation(s):
+// \led128~0_combout  = ( \reset~input_o  ) # ( !\reset~input_o  & ( \en~input_o  ) )
+
+	.dataa(!\en~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(!\reset~input_o ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led128~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led128~0 .extended_lut = "off";
+defparam \led128~0 .lut_mask = 64'h5555FFFF5555FFFF;
+defparam \led128~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X57_Y2_N31
+dffeas \led192~reg0 (
+	.clk(\clk~inputCLKENA0_outclk ),
+	.d(\led192~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\led128~0_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led192~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led192~reg0 .is_wysiwyg = "true";
+defparam \led192~reg0 .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X57_Y2_N36
+cyclonev_lcell_comb \led256~0 (
+// Equation(s):
+// \led256~0_combout  = ( !\reset~input_o  )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(!\reset~input_o ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led256~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led256~0 .extended_lut = "off";
+defparam \led256~0 .lut_mask = 64'hFFFF0000FFFF0000;
+defparam \led256~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X57_Y2_N37
+dffeas \led256~reg0 (
+	.clk(\clk~inputCLKENA0_outclk ),
+	.d(\led256~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\led128~0_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led256~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led256~reg0 .is_wysiwyg = "true";
+defparam \led256~reg0 .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X57_Y2_N15
+cyclonev_lcell_comb \led128inv~0 (
+// Equation(s):
+// \led128inv~0_combout  = ( !\reset~input_o  )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(!\reset~input_o ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led128inv~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led128inv~0 .extended_lut = "off";
+defparam \led128inv~0 .lut_mask = 64'hFFFF0000FFFF0000;
+defparam \led128inv~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X57_Y2_N17
+dffeas \led128inv~reg0 (
+	.clk(\clk~inputCLKENA0_outclk ),
+	.d(\led128inv~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\led128~0_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led128inv~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led128inv~reg0 .is_wysiwyg = "true";
+defparam \led128inv~reg0 .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X57_Y2_N51
+cyclonev_lcell_comb \led192inv~0 (
+// Equation(s):
+// \led192inv~0_combout  = ( !\reset~input_o  )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(!\reset~input_o ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led192inv~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led192inv~0 .extended_lut = "off";
+defparam \led192inv~0 .lut_mask = 64'hFFFF0000FFFF0000;
+defparam \led192inv~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X57_Y2_N52
+dffeas \led192inv~reg0 (
+	.clk(\clk~inputCLKENA0_outclk ),
+	.d(\led192inv~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\led128~0_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led192inv~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led192inv~reg0 .is_wysiwyg = "true";
+defparam \led192inv~reg0 .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X57_Y2_N54
+cyclonev_lcell_comb \led256inv~0 (
+// Equation(s):
+// \led256inv~0_combout  = ( !\reset~input_o  )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(!\reset~input_o ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led256inv~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led256inv~0 .extended_lut = "off";
+defparam \led256inv~0 .lut_mask = 64'hFFFF0000FFFF0000;
+defparam \led256inv~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X57_Y2_N55
+dffeas \led256inv~reg0 (
+	.clk(\clk~inputCLKENA0_outclk ),
+	.d(\led256inv~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\led128~0_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led256inv~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led256inv~reg0 .is_wysiwyg = "true";
+defparam \led256inv~reg0 .power_up = "low";
+// synopsys translate_on
+
+// Location: MLABCELL_X6_Y45_N0
 cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
 // Equation(s):
 
